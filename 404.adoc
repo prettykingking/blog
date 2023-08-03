@@ -1,0 +1,13 @@
+= Page Not Found
+:page-layout: error
+
+== The page you are looking for can't be found.
+
+Here are some helpful links instead:
+
+Blog Home
+
+Posts in English
+
+Posts in Chinese
+

@@ -1,4 +1,5 @@
-= Zheng Jie
+= Zheng Jie's Blog
+:page-description: Zheng Jie's Blog
 :page-layout: home
 
-Index
+First paragraph.
