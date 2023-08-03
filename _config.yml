@@ -29,7 +29,6 @@ twitter_username: prettykingking
 github_username:  prettykingking
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-asciidoc
   - jekyll-feed
@@ -43,7 +42,7 @@ asciidoc:
 asciidoctor:
   attributes:
     source-highlighter: pygments
-    pygments-css: class
+    pygments-css: style
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -2,7 +2,7 @@
 Jie Zheng
 2023-04-17 23:11:35 +0800
 :page-layout: post
-:page-categories: [lua, pattern-matching]
+:page-category: lua
 
 There is no regular expression in Lua, instead it provides a pattern-matching.
 

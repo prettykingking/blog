@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{%- include head.html -%}
+<body>
+<div>
+  {%- include header.html -%}
+
+  <div class="main main-archive">
+    <main>
+      <div class="main-container">
+        <div class="row gx-0">
+          <div class="col-md-12">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {%- include footer.html -%}
+</div>
+</body>
+</html>
