@@ -3,3 +3,5 @@
 :page-layout: home
 
 First paragraph.
+
+Second paragraph.

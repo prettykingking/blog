@@ -40,6 +40,7 @@ asciidoc:
 
 # AsciiDoctor
 asciidoctor:
+  template_dir: _templates
   attributes:
     source-highlighter: pygments
     pygments-css: style
