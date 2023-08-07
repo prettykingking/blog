@@ -11,7 +11,7 @@ gem "jekyll", "~> 4.3.2"
 
 # asciidoctor for AsciiDoc
 gem 'asciidoctor', '~> 2.0', '>= 2.0.18'
-gem 'tilt', '~> 2.2'
+gem 'slim', '~> 5.1', '>= 5.1.1'
 
 # Pygments for syntax highlighting
 gem 'pygments.rb', '~> 2.3', '>= 2.3.1'
