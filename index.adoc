@@ -6,3 +6,19 @@ First paragraph.
 
 == Contact & Links
 
+[cols="1,1"]
+|===
+| Email
+| prettykingking@live.com
+
+| Github
+| prettykingking
+|===
+
+== Head 2
+
+Head 2
+
+=== Head 3
+
+Head 3
