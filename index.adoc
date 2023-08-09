@@ -15,10 +15,24 @@ First paragraph.
 | prettykingking
 |===
 
-== Head 2
+== Posts
 
-Head 2
+I occasionally write posts about various topics, mostly technical. In English, or Chinese.
 
-=== Head 3
+[cols="1,1"]
+|===
+| link:/archive/en[Posts in English]
+| link:/archive/zh[中文文章]
 
-Head 3
+|===
+
+
+== Professional Skills
+
+* Programming Language
+* Database System
+
+== Projects
+
+https://github.com/prettykingking/snowflake[Snowflake]:: Globally Unique ID Generation Service written in Golang.
+
