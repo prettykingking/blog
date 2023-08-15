@@ -1,0 +1,246 @@
+= Document Title
+:page-description: Lorem ipsum is placeholder text commonly used in the graphic,
+print, and publishing industries for previewing layouts and visual mockups.
+:page-layout: post
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+
+
+== Level 1 Section Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+
+=== Level 2 Section Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+
+==== Level 3 Section Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+
+image::/images/English-Handwriting.jpeg[title=*Figure 1.1* English Handwriting]
+
+===== Level 4 Section Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+
+====== Level 5 Section Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+
+
+== Code
+
+=== Code samples
+
+[source,c]
+----
+#include <stdio.h>
+int main() {
+    printf("Hello Jie");
+    return 0;
+}
+----
+
+.*Code Fragment 11.11.* Additional code
+[source,c]
+----
+#include <stdio.h>
+int main() {
+    printf("Hello Jie");
+    return 0;
+}
+----
+
+=== Code in texts
+
+To refer to a single status code, use the following formatting and phrasing:
+
+an `HTTP 400 Bad Request` status code
+
+To refer to a range of codes, use the following form:
+
+an HTTP `2xx` or `400` status code
+
+
+== Notices
+
+[NOTE]
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+[TIP]
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+[IMPORTANT]
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+[CAUTION]
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+[WARNING]
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+
+== Text-formatting
+
+Quick reference for, many of the general text-formatting conventions.
+
+It has *strong* significance to me.
+
+I _cannot_ stress this enough.
+
+Type `OK` to accept.
+
+That *_really_* has to go.
+
+Mark my words, #automation is essential#.
+
+##Mark##up refers to text that contains formatting ##mark##s.
+
+
+== Tables
+
+.*Table 1.* List or table?
+[cols="3,4,3"]
+|===
+| Item type | Example | How to present
+
+| Each item is a single unit.
+| A list of programming language names, or a list of steps to follow.
+| Use a numbered list, lettered list, or bulleted list.
+
+| Each item is a pair of pieces of related data.
+| A list of term/definition pairs.
+| Use a description list (or, in some contexts, a table).
+
+| Each item is three or more pieces of related data.
+| A set of parameters, where each parameter has a name, a data type, and a description.
+| Use a table.
+
+|===
+
+
+[%autowidth]
+|===
+| Attribute name | Type
+
+| `src`
+| HTML
+
+| `html`
+| HTML
+
+|===
+
+
+== Blockquote
+
+[quote,Monty Python and the Holy Grail]
+____
+Dennis: Come and see the violence inherent in the system. Help! Help! I'm being repressed!
+
+King Arthur: Bloody peasant!
+
+Dennis: Oh, what a giveaway! Did you hear that? Did you hear that, eh? That's what I'm on about! Did you see him repressing me? You saw him, Didn't you?
+____
+
+.After landing the cloaked Klingon bird of prey in Golden Gate park:
+[quote,Captain James T. Kirk,Star Trek IV: The Voyage Home]
+Everybody remember where we parked.
+
+
+== Lists
+
+=== Numbered list
+
+Here's a list of things to do after breakfast, in order:
+
+. Go shopping.
+.. Buy groceries:
+*** Flour
+*** Eggs
+*** Sugar
+*** Butter
+.. Go to mall:
+... Buy dress.
+... Buy shoes.
+. Make cake.
+. Build birthday present out of spare parts.
+. Clean house.
+
+=== Bulleted list
+
+Here's a list of things that can go wrong, in no particular order:
+
+* Your bicycle might explode.
+* The sun might go out.
+* An ant might break its leg and require a tiny splint.
+
+=== Description list
+
+Here are some descriptions of types of birds:
+
+Emu:: The best kind of bird.
+Crow:: The other best kind of bird.
+Peacock:: Also the best kind of bird.
+Phoenix:: An even better kind of bird.

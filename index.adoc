@@ -6,7 +6,7 @@ First paragraph.
 
 == Contact & Links
 
-[cols="1,1"]
+[%autowidth,cols="1,1"]
 |===
 | Email
 | prettykingking@live.com
@@ -19,7 +19,7 @@ First paragraph.
 
 I occasionally write posts about various topics, mostly technical. In English, or Chinese.
 
-[cols="1,1"]
+[%autowidth,cols="1,1"]
 |===
 | link:/archive/en[Posts in English]
 | link:/archive/zh[中文文章]

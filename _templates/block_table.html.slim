@@ -1,11 +1,16 @@
 div class="table-wrapper"
   table(id=id
-        class=['table', role]
-        style=style_value(width: ("#{attr :tablepcwidth}%" unless autowidth? || spread?)))
+        class=[("stretched" unless autowidth?), role])
+    - if title?
+      caption =title
     - unless (attr :rowcount).zero?
       colgroup
-        - columns.each do
-          col
+        - if autowidth?
+          - columns.each do
+            col
+        - else
+          - columns.each do |col|
+            col style="width: #{col.attr :colpcwidth}%;"
       - [:head, :foot, :body].reject { |tblsec| rows[tblsec].empty? }.each do |tblsec|
         *{tag: %(t#{tblsec})}
           - rows[tblsec].each do |row|

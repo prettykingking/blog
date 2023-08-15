@@ -1,2 +1,8 @@
-= block_with_title 'stemblock'
-  .content =(delimit_stem content, style)
+- if title?
+  figure
+    .stem-listing
+      .stem =(delimit_stem content, style)
+    figcaption =title
+- else
+  .stem-listing
+    .stem =(delimit_stem content, style)

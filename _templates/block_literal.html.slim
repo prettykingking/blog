@@ -1,2 +1,9 @@
-= block_with_title 'literalblock'
-  .content: pre class=nowrap? =content
+- if title?
+  figure
+    .code-listing
+      pre class=nowrap? =content
+    figcaption =title
+- else
+  .code-listing
+    pre class=nowrap? =content
+

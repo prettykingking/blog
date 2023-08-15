@@ -127,68 +127,6 @@ module Slim::Helpers
   end
 
   ##
-  # Wraps a block in a div element with the specified class and optionally
-  # the node's +id+ and +role+(s). If the node's +captioned_title+ is not
-  # empty, than a nested div with the class "title" and the title's content
-  # is added as well.
-  #
-  # Note: Every node has method +captioned_title+; if it doesn't have a
-  # caption, then this method returns just a naked title.
-  #
-  # @example When @id, @role and @title attributes are set.
-  #   = block_with_title class: ['quoteblock', 'center']
-  #     blockquote =content
-  #
-  #   <div id="myid" class="quoteblock center myrole1 myrole2">
-  #     <div class="title">Block Title</div>
-  #     <blockquote>Lorem ipsum</blockquote>
-  #   </div>
-  #
-  # @example When @id, @role and @title attributes are empty.
-  #   = block_with_title class: 'quoteblock center', style: style_value(float: 'left')
-  #     blockquote =content
-  #
-  #   <div class="quoteblock center" style="float: left;">
-  #     <blockquote>Lorem ipsum</blockquote>
-  #   </div>
-  #
-  # @example When shorthand style for class attribute is used.
-  #   = block_with_title 'quoteblock center'
-  #     blockquote =content
-  #
-  #   <div class="quoteblock center">
-  #     <blockquote>Lorem ipsum</blockquote>
-  #   </div>
-  #
-  # @param attributes [Hash, String] the tag's attributes as Hash),
-  #        or the tag's class if it's not a Hash.
-  # @param title_position [:top, :bottom] position of the title element.
-  # @yield The block of Slim/HTML code within the tag (optional).
-  # @return [String] a rendered HTML fragment.
-  #
-  def block_with_title(attributes = {}, title_position = :top, &block)
-    if attributes.is_a? Hash
-      klass = attributes.delete(:class)
-    else
-      klass = attributes
-      attributes = {}
-    end
-    klass = klass.split(' ') if klass.is_a? String
-    attributes[:class] = [klass, role].flatten.uniq
-    attributes[:id] = id
-
-    html_tag 'div', attributes do
-      if captioned_title.nil_or_empty?
-        yield
-      else
-        ary = [ html_tag('div', {class: 'title'}, captioned_title), yield ]
-        ary.reverse! if title_position == :bottom
-        ary.compact.join "\n"
-      end
-    end
-  end
-
-  ##
   # Delimite the given equation as a STEM of the specified type.
   #
   # @param equation [String] the equation to delimite.

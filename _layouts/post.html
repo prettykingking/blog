@@ -4,12 +4,31 @@
 <body>
 {%- include header.html -%}
 
-<div class="main main-archive">
+<div class="main">
   <main>
     <div class="main-container">
       <div class="row gx-0">
         <div class="col-md-12">
-          {{ content }}
+          <article class="article">
+              <div class="article-header component-text">
+                <div class="article-eyebow">
+                  <div class="article-topic">
+                    <a class="topic-link" href="#">Update</a>
+                  </div>
+                  <div class="article-date">
+                    June 13, 2023
+                  </div>
+                </div>
+                <div class="article-title">
+                  <h1 class="h1">{{ page.title }}</h1>
+                </div>
+                <div class="article-subhead">
+                  {{ page.description }}
+                </div>
+              </div>
+
+              {{ content }}
+          </article>
         </div>
       </div>
     </div>
