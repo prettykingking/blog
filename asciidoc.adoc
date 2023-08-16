@@ -1,4 +1,5 @@
 = Document Title
+:sectnums:
 :page-description: Lorem ipsum is placeholder text commonly used in the graphic,
 print, and publishing industries for previewing layouts and visual mockups.
 :page-layout: post
@@ -38,7 +39,8 @@ irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
-image::/images/English-Handwriting.jpeg[title=*Figure 1.1* English Handwriting]
+.*Figure 1.1* English Handwriting
+image::/images/English-Handwriting.jpeg[English Handwriting]
 
 ===== Level 4 Section Title
 
@@ -59,7 +61,7 @@ nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
 
-== Code
+== Verbitim and Source
 
 === Code samples
 
@@ -86,11 +88,52 @@ int main() {
 
 To refer to a single status code, use the following formatting and phrasing:
 
+[example]
 an `HTTP 400 Bad Request` status code
 
 To refer to a range of codes, use the following form:
 
+.example
+====
 an HTTP `2xx` or `400` status code
+====
+
+=== Listing as input
+
+ $ cd secure/vault/defops
+
+[listing]
+This is an example of a paragraph assigned
+the `listing` style in an attribute list.
+Notice that the monospace marks are
+preserved in the output.
+
+----
+This is a _delimited listing block_.
+
+The content inside is displayed as <pre> text.
+----
+
+=== Literal as output
+
+ ~/secure/vault/defops
+
+[literal]
+error: 1954 Forbidden search
+absolutely fatal: operation lost in the dodecahedron of doom
+Would you like to try again? y/n
+
+....
+Kismet: Where is the *defensive operations manual*?
+
+Computer: Calculating ...
+Can not locate object.
+You are not authorized to know it exists.
+
+Kismet: Did the werewolves tell you to say that?
+
+Computer: Calculating ...
+....
 
 
 == Notices
@@ -149,14 +192,13 @@ It has *strong* significance to me.
 
 I _cannot_ stress this enough.
 
-Type `OK` to accept.
-
 That *_really_* has to go.
-
-Mark my words, #automation is essential#.
 
 ##Mark##up refers to text that contains formatting ##mark##s.
 
+Type `OK` to accept.
+
+To copy, press kbd:[Control+C] (or kbd:[Command+C] on macOS).
 
 == Tables
 
@@ -207,6 +249,24 @@ ____
 .After landing the cloaked Klingon bird of prey in Golden Gate park:
 [quote,Captain James T. Kirk,Star Trek IV: The Voyage Home]
 Everybody remember where we parked.
+
+
+== Verse
+
+[verse,Carl Sandburg, two lines from the poem Fog]
+The fog comes
+on little cat feet.
+
+[verse,Carl Sandburg,Fog]
+____
+The fog comes
+on little cat feet.
+
+It sits looking
+over harbor and city
+on silent haunches
+and then moves on.
+____
 
 
 == Lists

@@ -1,5 +1,3 @@
 .component class="component-text"
+  / = converter.convert document, 'outline'
   =content
-
-- if (attr? :toc) && (attr? 'toc-placement', 'preamble')
-  include _toc.html
