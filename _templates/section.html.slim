@@ -1,5 +1,5 @@
-- sect1 = section_level == 1
+- sect1 = level == 1
 = html_tag_if sect1, :div, class: ['component', 'component-text', role]
-  *{tag: %(h#{section_level + 1}), id: id, class: ['component-header', %(h#{section_level + 1})]}
+  *{tag: %(h#{level + 1}), id: id, class: ['component-header', %(h#{level + 1})]}
     =section_title
   =content

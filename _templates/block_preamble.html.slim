@@ -1,3 +1,4 @@
 .component class="component-text"
-  / = converter.convert document, 'outline'
+  - if (document.attr? :toc)
+    = converter.convert document, 'outline'
   =content

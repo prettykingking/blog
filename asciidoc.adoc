@@ -1,6 +1,10 @@
 = Document Title
+Jie Zheng
+:revdate: 2023-08-18 17:49:00 +0800
+:toc:
 :sectnums:
-:page-description: Lorem ipsum is placeholder text commonly used in the graphic,
+:page-category: Update Update
+:page-description: Lorem ipsum is placeholder text commonly used in the graphic, \
 print, and publishing industries for previewing layouts and visual mockups.
 :page-layout: post
 
@@ -134,6 +138,22 @@ Kismet: Did the werewolves tell you to say that?
 
 Computer: Calculating ...
 ....
+
+
+== Equations and Formulas
+
+=== Inline STEM content
+
+latexmath:[\sqrt{4} = 2]
+
+Water (latexmath:[H_2O]) is a critical component.
+
+=== Block STEM content
+
+[latexmath]
+++++
+sqrt(4) = 2
+++++
 
 
 == Notices

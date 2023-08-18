@@ -20,7 +20,6 @@ module Slim::Helpers
 
   # Defaults
   DEFAULT_SECTNUMLEVELS = 3
-  DEFAULT_TOCLEVELS = 2
 
   # The MathJax configuration.
   MATHJAX_CONFIG = {
@@ -224,7 +223,7 @@ module Slim::Helpers
   # @param sec [Asciidoctor::Section] the section node (default: self).
   # @return [Integer]
   #
-  def section_level(sec = self)
+  def toc_level(sec = self)
     @_section_level ||= (sec.level == 0 && sec.special) ? 1 : sec.level
   end
 

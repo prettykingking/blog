@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 {%- include head.html -%}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <body>
 {%- include header.html -%}
 
@@ -13,10 +14,10 @@
               <div class="article-header component-text">
                 <div class="article-eyebow">
                   <div class="article-topic">
-                    <a class="topic-link" href="#">Update</a>
+                    <a class="topic-link" href="#">{{ page.category }}</a>
                   </div>
                   <div class="article-date">
-                    June 13, 2023
+                    {{ page.date }}
                   </div>
                 </div>
                 <div class="article-title">
@@ -36,5 +37,23 @@
 </div>
 
 {%- include footer.html -%}
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js">
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js">
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function (e) {
+    const spans = document.querySelectorAll("span.inline-stem");
+    for (const s of spans) {
+      renderMathInElement(s);
+    }
+    const blocks = document.querySelectorAll("div.stem");
+    for (const b of blocks) {
+      renderMathInElement(b);
+    }
+  });
+</script>
+<script async src="/static/js/main.d86b163d015d3b97ef8b.js"></script>
 </body>
 </html>
