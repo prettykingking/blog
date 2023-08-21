@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: "en" }}">
 {%- include head.html -%}
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <body>
@@ -17,7 +17,7 @@
                     <a class="topic-link" href="#">{{ page.category }}</a>
                   </div>
                   <div class="article-date">
-                    {{ page.date }}
+                    {{ page.date | date: date_format }}
                   </div>
                 </div>
                 <div class="article-title">

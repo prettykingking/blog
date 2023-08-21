@@ -1,38 +1,16 @@
-= Zheng Jie's Blog
-:page-description: Zheng Jie's Blog
+= Zheng Jie
+:page-description: Zheng Jie
 :page-layout: home
 
-First paragraph.
+== Contact and Links
 
-== Contact & Links
-
-[%autowidth,cols="1,1"]
-|===
-| Email
-| prettykingking@live.com
-
-| Github
-| prettykingking
-|===
-
-== Posts
-
-I occasionally write posts about various topics, mostly technical. In English, or Chinese.
-
-[%autowidth,cols="1,1"]
-|===
-| link:/archive/en[Posts in English]
-| link:/archive/zh[中文文章]
-
-|===
-
-
-== Professional Skills
-
-* Programming Language
-* Database System
+* mailto:prettykingking@live.com[Email]
+* https://github.com/prettykingking[Github]
+* link:/archive/en[Blog in English]
+* link:/archive/zh[Blog in Chinese]
 
 == Projects
 
-https://github.com/prettykingking/snowflake[Snowflake]:: Globally Unique ID Generation Service written in Golang.
+https://github.com/prettykingking/snowflake[Snowflake]:: GUID(Globally Unique ID)
+Generation Service written in Golang.
 

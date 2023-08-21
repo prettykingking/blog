@@ -1,12 +1,13 @@
 = Document Title
-Jie Zheng
+Jie Zheng <prettykingking@live.com>
 :revdate: 2023-08-18 17:49:00 +0800
 :toc:
 :sectnums:
+:page-lang: zh
+:page-layout: post
 :page-category: Update Update
 :page-description: Lorem ipsum is placeholder text commonly used in the graphic, \
 print, and publishing industries for previewing layouts and visual mockups.
-:page-layout: post
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

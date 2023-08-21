@@ -1,0 +1,3 @@
+= About in English
+:page-lang: en
+:page-layout: about

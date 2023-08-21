@@ -2,15 +2,51 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 {%- include head.html -%}
 <body>
+
+<div class="header">
 {%- include header.html -%}
+</div>
 
 <div class="main main-archive">
   <main>
-    <div class="main-container">
-      <div class="row gx-0">
-        <div class="col-md-12">
-          {{ content }}
+    <div class="archives">
+      <div class="archive-group">
+        {% assign posts = site.posts %}
+        {% assign last_date_group = "" %}
+        {% if posts.size > 0 %}
+          {%- for post in posts -%}
+          {% assign post_date_group = post.date | date: "%Y-%m" %}
+
+          {% if post_date_group != last_date_group %}
+          {% assign last_date_group = post.date | date: "%Y-%m" %}
+          <div class="row gx-0">
+            <div class="col-12">
+              <h2 class="archive-group-title">{{ post.date | date: date_group_format }}</h2>
+            </div>
+          </div>
+          {% endif %}
+
+          <div class="row gx-0">
+            <div class="col-12">
+              <a href="{{ post.url }}" class="archive">
+                <div class="archive-content archive-no-picture">
+                  <p class="archive-topic">{{ post.category }}</p>
+                  <h4 class="archive-title">{{ post.title }}</h4>
+                  <p class="archive-date">{{ post.date | date: date_format }}</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+
+        <div class="row gx-0">
+          <div class="col-12">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><span class="page-num">1</span></li>
+            </ul>
+          </div>
         </div>
+        {% endif %}
       </div>
     </div>
   </main>

@@ -1,8 +1,9 @@
 = Improve Lua pattern-matching performance
-Jie Zheng
-2023-04-17 23:11:35 +0800
+Jie Zheng <prettykingking@live.com>
+:revdate: 2023-04-17 23:11:35 +0800
+:page-lang: en
 :page-layout: post
-:page-category: lua
+:page-category: Lua
 
 There is no regular expression in Lua, instead it provides a pattern-matching.
 
