@@ -29,8 +29,8 @@ permalink: /p/:year/:month/:title
 # Build settings
 plugins:
   - jekyll-asciidoc
-  - jekyll-feed
-  - jekyll-paginate-v2
+  # - jekyll-feed
+  # - jekyll-paginate-v2
 
 # AsciiDoc
 asciidoc:
@@ -54,7 +54,6 @@ asciidoctor:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - README.adoc
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -65,3 +64,5 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+    - README.adoc
+    - script/
