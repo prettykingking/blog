@@ -18,15 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jie Zheng
+title: Zheng Jie
 email: prettykingking@live.com
 description: >- # this means to ignore newlines until "baseurl:"
   Jie's Blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jiezheng.org" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /p/:year/:month/:title
-twitter_username: prettykingking
-github_username:  prettykingking
 
 # Build settings
 plugins:

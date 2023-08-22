@@ -1,3 +1,4 @@
 = Posts in Chinese
 :page-lang: zh
 :page-layout: archive
+:page-nav:

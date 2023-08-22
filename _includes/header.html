@@ -6,18 +6,11 @@
   {% assign date_group_format = "%B %Y" %}
 {% endif %}
 
-{% if page.layout == "archive" %}
-<header class="header-logo-row">
-  <div class="main-container text-center">
-    {% if page.lang == "zh" %}
-    <span class="header-title">杰的文章</span>
-    {% else %}
-    <span class="header-title">Jie's Posts</span>
-    {% endif %}
-  </div>
-</header>
+{% if page.nav %}
+  <header class="header-logo-row">
 {% else %}
-<header class="header-logo-row no-tabs header-shadow">
+  <header class="header-logo-row no-tabs header-shadow">
+{% endif %}
   <div class="main-container text-center">
     {% if page.lang == "zh" %}
     <a href="/archive/zh" class="header-title">杰的文章</a>
@@ -26,25 +19,24 @@
     {% endif %}
   </div>
 </header>
-{% endif %}
 
-{% if page.layout == "archive" %}
+{% if page.nav %}
 <nav class="header-tabs header-shadow">
   <div class="container d-flex justify-content-center">
     <ul class="nav">
     {% if page.lang == "zh" %}
-      <li class="nav-item" active>
-        <a href="/archive/en" class="nav-link">归档</a>
-      </li>
       <li class="nav-item">
-        <a href="/" class="nav-link">关于</a>
+        <a href="/" class="nav-link">主页</a>
+      </li>
+      <li class="nav-item" active>
+        <a href="/archive/zh" class="nav-link">归档</a>
       </li>
     {% else %}
-      <li class="nav-item" active>
-        <a href="/archive/zh" class="nav-link">Archive</a>
-      </li>
       <li class="nav-item">
-        <a href="/" class="nav-link">About</a>
+        <a href="/" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item" active>
+        <a href="/archive/en" class="nav-link">Archive</a>
       </li>
     {% endif %}
     </ul>

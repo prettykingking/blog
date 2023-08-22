@@ -2,12 +2,14 @@
 :page-description: Zheng Jie
 :page-layout: home
 
-== Contact and Links
+You could contact me at #prettykingking@live.com#.
 
-* mailto:prettykingking@live.com[Email]
-* https://github.com/prettykingking[Github]
-* link:/archive/en[Blog in English]
-* link:/archive/zh[Blog in Chinese]
+I occasionally write posts about various topics in link:/archive/en[English]
+or link:/archive/zh[Chinese], mostly technical.
+
+Here are some links you could find me on:
+
+* https://github.com/prettykingking[prettykingking] on Github.
 
 == Projects
 
