@@ -12,6 +12,7 @@ SCRIPT_DIR="$(cd "$(dirname "${0}")" && pwd -P)"
 . "$SCRIPT_DIR"/functions.sh
 
 # define constants
+SITE_DIR=_site/
 
 # script usage
 function usage() {
@@ -21,15 +22,15 @@ $(colorize 'NAME' 0 1)
   $0
 
 $(colorize 'USAGE' 0 1)
-  $0 [OPTIONS] <source> <target>
+  $0 [OPTIONS] <target>
 
 $(colorize 'ARGUMENTS' 0 1)
-  repo     source file
-  target   target file
+  target     target file
 
 $(colorize 'OPTIONS' 0 1)
   -h, --help    show usage
   --dry-run     run without any changes
+  --source      (default: $SITE_DIR) source directory
 
 EOF
   exit 0
@@ -57,6 +58,7 @@ function parse_params() {
   dry_run=0
 
   # define options
+  source="$SITE_DIR"
 
   while :; do
     case "${1-}" in
@@ -70,6 +72,11 @@ function parse_params() {
       ;;
 
     # parse options
+    --source)
+        source="${2-}"
+        ((options_count += 1))
+        shift
+        ;;
 
     -?*)
       usage
@@ -90,7 +97,6 @@ function parse_params() {
   done
 
   # define arguments
-  source=''
   target=''
 
   # parse args
@@ -101,11 +107,7 @@ function parse_params() {
       # define positional arguments here
 
       if ((args_count == 1)); then
-        repo="$arg"
-      fi
-
-      if ((args_count == 2)); then
-        dist=$(echo "$arg" | sed 's/\/*$//')
+        target="$arg"
       fi
     fi
   done
@@ -131,21 +133,19 @@ function parse_params() {
 # define more functions
 
 function put() {
-  local archive="site.tar.gz"
-
-  info "archive: $repo/$archive"
+  local archive="site.tar.bz2"
 
   if [[ "$dry_run" -eq 1 ]]; then
     quit 'did not make any change'
   fi
 
-  local command="tar -cz -f $archive -C $dist"
-
-  eval "$command ."
+  tar -cj -f "$archive" -C "$source" .
 
   if [[ ! -f "$archive" ]]; then
     error "could not create archive $archive"
   fi
+
+  scp "$archive" "$target"
 
   # remove archive
   info 'clean up archive'
@@ -156,7 +156,7 @@ function put() {
 function run() {
   parse_params "$@"
 
-  push
+  put
 
   quit "$source has been uploded."
 }

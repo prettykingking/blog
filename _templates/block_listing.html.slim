@@ -1,16 +1,25 @@
 - if title?
   figure
-    .code-listing
-      - if style == 'source'
-        pre class=[('linenums' if attr? :linenums), nowrap?] data-lang=source_lang
+    .code-listing data-lang=source_lang
+      .code-wrapper
+        - if attr? :linenums
           =content
-      - else
-        pre class=nowrap? =content
+        - else
+          table
+            tbody
+              tr
+                td
+                  pre class=nowrap? =content
     figcaption =title
 - else
-  .code-listing
-    - if style == 'source'
-      pre class=[('linenums' if attr? :linenums), nowrap?] data-lang=source_lang
+  .code-listing data-lang=source_lang
+    .code-wrapper
+      - if attr? :linenums
         =content
-    - else
-      pre class=nowrap? =content
+      - else
+        table
+          tbody
+            tr
+              td
+                pre class=nowrap? =content
+

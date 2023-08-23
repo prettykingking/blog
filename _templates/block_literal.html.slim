@@ -1,9 +1,19 @@
 - if title?
   figure
     .code-listing
-      pre class=nowrap? =content
+      .code-wrapper
+        table
+          tbody
+            tr
+              td
+                pre class=nowrap? =content
     figcaption =title
 - else
   .code-listing
-    pre class=nowrap? =content
+    .code-wrapper
+      table
+        tbody
+          tr
+            td
+              pre class=nowrap? =content
 
