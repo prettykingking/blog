@@ -1,10 +1,10 @@
 # Jekyll
 _site
-.site.tar.bz2
+site.tar.bz2
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
 
 # IDEA
-.idea
+.idea/

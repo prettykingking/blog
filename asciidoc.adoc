@@ -70,6 +70,23 @@ qui officia deserunt mollit anim id est laborum.
 
 === Code samples
 
+[%linenums,text,highlight=3]
+----
+server {
+   listen 80;
+   listen [::]:80;
+
+   server_name example.com;
+
+   root /var/www/example.com;
+   index index.html;
+
+   location / {
+       try_files $uri $uri/ =404;
+   }
+}
+----
+
 [%linenums,json,highlight="3..5"]
 ----
 {
