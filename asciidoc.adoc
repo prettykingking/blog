@@ -70,11 +70,23 @@ qui officia deserunt mollit anim id est laborum.
 
 === Code samples
 
+[%linenums,json,highlight="3..5"]
+----
+{
+  "string": "a b c",
+  "integer": 123,
+  "float": 1.23,
+  "array": [1, 2, 3],
+  "boolean": true,
+  "object": null
+}
+----
+
 [%linenums,c,highlight="1,3"]
 ----
 #include <stdio.h>
 int main() {
-    printf("Hello Jie Hello Jie Hello Jie Hello Jie Hello Jie Hello Jie Hello Jie");
+    printf("Hello Jie \nHello Jie Hello Jie Hello Jie Hello Jie Hello Jie Hello Jie");
     return 0;
 }
 ----
