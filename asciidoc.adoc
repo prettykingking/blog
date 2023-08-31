@@ -197,6 +197,8 @@ While werewolves are hardy community members, keep in mind the following dietary
 . Celery makes them sad.
 ====
 
+TIP: Short one-line tip.
+
 [TIP]
 ====
 While werewolves are hardy community members, keep in mind the following dietary concerns:
@@ -223,6 +225,9 @@ While werewolves are hardy community members, keep in mind the following dietary
 . More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
 . Celery makes them sad.
 ====
+
+WARNING: Wolpertingers are known to nest in server racks.
+Enter at your own risk.
 
 [WARNING]
 ====

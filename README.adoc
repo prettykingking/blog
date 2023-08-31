@@ -1,3 +1,76 @@
 = Jie Zheng's Blog
 
 This is the blog source files presented at https://jiezheng.org.
+
+
+== Jekyll
+
+The site is using https://jekyllrb.com[Jekyll] for generation.
+
+=== Install Jekyll
+
+I use MacPorts on Macbook with customized installation path.
+
+Set `GEM_HOME` in your `.bash_profile`. This could help you from messing up
+your global lib, also provide easy version management.
+
+----
+export GEM_HOME=/usr/local/ruby/gems/2.7.0
+----
+
+  $ /usr/local/MacPorts/bin/gem2.7 install jekyll
+
+=== New site
+
+  $ /usr/local/ruby/gems/2.7.0/bin/jekyll new --skip-bundle jekyll-sample
+
+TIP: The `--skip-bundle` option prevent automatic bundling after generation.
+
+=== Bundle dependencies
+
+Change to the generated site directory, then
+
+  $ /usr/local/MacPorts/bin/bundle2.7 install
+
+=== Start local server
+
+  $ /usr/local/ruby/gems/2.7.0/bin/jekyll server
+
+After start server, go to http://127.0.0.1:4000/ in Browser.
+
+=== Build your site
+
+  $ /usr/local/ruby/gems/2.7.0/bin/jekyll build
+
+Then upload _site to your server.
+
+
+== Add AsciiDoc support
+
+https://asciidoc.org[AsciiDoc] is a concise and comprehensive authoring format.
+http://asciidoctor.org[AsciiDoctor] is a fast implementation of it.
+
+=== Gemfile
+
+Add the following snippet to Gemfile.
+
+----
+# asciidoctor for AsciiDoc
+gem 'asciidoctor', '~> 2.0', '>= 2.0.18'
+gem 'slim', '~> 5.1', '>= 5.1.1'
+
+# Pygments for syntax highlighting
+gem 'pygments.rb', '~> 2.3', '>= 2.3.1'
+
+group :jekyll_plugins do
+  gem 'jekyll-asciidoc', '~> 3.0'
+end
+----
+
+=== Customizing the generated HTML
+
+Create a directory `_templates` in your site to store your templates.
+Find additional examples of custom templates in the
+https://github.com/asciidoctor/asciidoctor-backends[asciidoctor-backends] repository.
+
+AsciiDoctor provides several converters. For site just refer to html5 in slim directory.
