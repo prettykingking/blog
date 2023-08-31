@@ -1,6 +1,6 @@
 = Document Title
 Jie Zheng <prettykingking@live.com>
-:revdate: 2023-08-18 17:49:00 +0800
+:revdate: August 18, 2023
 :toc:
 :sectnums:
 :page-lang: zh

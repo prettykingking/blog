@@ -42,7 +42,7 @@ After start server, go to http://127.0.0.1:4000/ in Browser.
 
   $ /usr/local/ruby/gems/2.7.0/bin/jekyll build
 
-Then upload _site to your server.
+Then upload `_site` to your server.
 
 
 == Add AsciiDoc support
