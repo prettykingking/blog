@@ -6,7 +6,7 @@ Jie Zheng <prettykingking@live.com>
 :page-category: Shell
 :page-description: Quickly find recipes to resolve shell tasks.
 
-BASH is an acronym for Bourne Again Shell.
+BASH is an acronym for **B**ourne **A**gain Shell.
 It is the default shell in most Linux distributions. So use it well can be a
 time-saving skill.
 

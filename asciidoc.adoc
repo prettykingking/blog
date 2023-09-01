@@ -243,6 +243,8 @@ While werewolves are hardy community members, keep in mind the following dietary
 
 Quick reference for, many of the general text-formatting conventions.
 
+**C**reate, **R**ead, **U**pdate, and **D**elete (CRUD).
+
 It has *strong* significance to me.
 
 I _cannot_ stress this enough.
