@@ -1,0 +1,49 @@
+= Bash - The quick guide
+Jie Zheng <prettykingking@live.com>
+:revdate: September 1, 2023
+:page-lang: en
+:page-layout: post
+:page-category: Shell
+:page-description: Quickly find recipes to resolve shell tasks.
+
+BASH is an acronym for Bourne Again Shell.
+It is the default shell in most Linux distributions. So use it well can be a
+time-saving skill.
+
+For full reference, check
+https://www.gnu.org/software/bash/manual/bash.html[GNU Bash Manual].
+
+
+== Command line interaction
+
+=== Moving
+
+* kbd:[Control+A] Go to the beginning of the line you are currently typing on.
+* kbd:[Control+E] Go to the end of the line you are currently typing on.
+* kbd:[Alt+F] Move cursor forward one word on the current line.
+* kbd:[Alt+B] Move cursor backward one word on the current line.
+* kbd:[Control+C] Kill whatever you are running.
+* kbd:[Control+D] Exit the current shell.
+
+=== Editing
+
+* kbd:[Tab] Auto-complete files and folder names.
+* kbd:[Control+W] Delete the word before the cursor.
+* kbd:[Control+K] Clear the line after the cursor.
+* kbd:[Control+T] Swap the last two characters before the cursor.
+* kbd:[Esc+T] Swap the last two words before the cursor.
+* kbd:[Control+L] Clears the Screen, similar to the clear command.
+* kbd:[Control+U] Clears the line before the cursor position.
+If you are at the end of the line, clears the entire line.
+* kbd:[Control+H] Same as backspace.
+* kbd:[Control+Z] Puts whatever you are running into a suspended background process.
+`fg` restores it.
+
+=== Searching in the history
+
+* kbd:[Control+R] Searches backworkd through the history.
+* kbd:[Control+S] Searches forward through the history.
+
+
+== Scripting
+
