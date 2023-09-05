@@ -7,4 +7,5 @@
   a id=target
   |[#{@target}]
 - else
-  a id=id class=role href=target target=(attr :window) title=(attr :title) =text
+  - external = target.index("://") == nil
+  a id=id class=[("external" unless external), role] href=target target=(attr :window) title=(attr :title) =text

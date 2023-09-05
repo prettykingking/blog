@@ -20,8 +20,10 @@ https://www.gnu.org/software/bash/manual/bash.html[GNU Bash Manual].
 
 * kbd:[Control+A] Go to the beginning of the line you are currently typing on.
 * kbd:[Control+E] Go to the end of the line you are currently typing on.
-* kbd:[Alt+F] Move cursor forward one word on the current line.
-* kbd:[Alt+B] Move cursor backward one word on the current line.
+* kbd:[Control+F] Move forward a character.
+* kbd:[Control+B] Move back a character.
+* kbd:[Meta+F] Move cursor forward one word on the current line.
+* kbd:[Meta+B] Move cursor backward one word on the current line.
 * kbd:[Control+C] Kill whatever you are running.
 * kbd:[Control+D] Exit the current shell.
 
@@ -31,7 +33,7 @@ https://www.gnu.org/software/bash/manual/bash.html[GNU Bash Manual].
 * kbd:[Control+W] Delete the word before the cursor.
 * kbd:[Control+K] Clear the line after the cursor.
 * kbd:[Control+T] Swap the last two characters before the cursor.
-* kbd:[Esc+T] Swap the last two words before the cursor.
+* kbd:[Meta+T] Swap the last two words before the cursor.
 * kbd:[Control+L] Clears the Screen, similar to the clear command.
 * kbd:[Control+U] Clears the line before the cursor position.
 If you are at the end of the line, clears the entire line.

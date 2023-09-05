@@ -1,16 +1,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if page.description | strip != "" %}
+  {%- if page.description | strip != "" -%}
   <meta name="description" content="{{ page.description }}">
-  {% endif %}
+  {%- endif -%}
 
-  {% if page.layout == "home" %}
+  {%- if page.layout == "home" -%}
   <title>{{ page.title }}</title>
-  {% else %}
+  {%- else -%}
   <title>{{ page.title }} - Zheng Jie's Blog</title>
-  {% endif %}
+  {%- endif -%}
   <link rel="icon" type="image/png" href="/images/favicon-64x64.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon-180x180.png">
-  <link rel="stylesheet" type="text/css" href="{{ "/static/css/main.c700164fb5449c723c62.css" | relative_url }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/static/css/main.0d7b924e1b65b858b23b.css" | relative_url }}">
 </head>
