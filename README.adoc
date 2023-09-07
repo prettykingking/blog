@@ -3,6 +3,14 @@
 This is the blog source files presented at https://jiezheng.org.
 
 
+== Posts
+
+Consider not to include stop words to keep URL simple and short. Please read
+https://www.opinosis-analytics.com/knowledge-base/stop-words-explained/[What are stop words]?
+
+* https://github.com/igorbrigadir/stopwords/blob/master/en/terrier.txt[English stop words]
+
+
 == Jekyll
 
 The site is using https://jekyllrb.com[Jekyll] for generation.
