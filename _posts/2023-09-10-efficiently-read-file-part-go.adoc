@@ -1,0 +1,83 @@
+= Efficiently read file by part in Go
+Jie Zheng <prettykingking@live.com>
+:revdate: September 10, 2023
+:page-lang: en
+:page-layout: post
+:page-category: Go
+:page-description: Efficiently read file by part in Go.
+
+You can read text files line by line. Also you can read binary files part by part,
+especially when dealing with large files. The part size depends on your actual need.
+Let's find out how to do this in Go.
+
+== Read file by part
+
+A common case is uploading a very large file. You need to read in parts, then upload it
+to cloud storage. But read file into memory is a RAM consuming operation. So reuse
+the allocated memory is the key to be cost-effective.
+
+[%linenums,go,highlight="33,38,48"]
+----
+package main
+
+import (
+	"fmt"
+	"math"
+	"os"
+)
+
+func calculateTotalParts(size int64, partSize int32) int32 {
+	var parts float64
+	parts = math.Ceil(float64(size) / float64(partSize))
+
+	return int32(parts)
+}
+
+const partSize = 1024 * 1024 * 16 // 16MiB
+
+func main() {
+	var filePath = "" // fill in the file path
+
+	inf, err := os.Stat(filePath)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	file, err := os.Open(filePath)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+
+	var buf = make([]byte, partSize)
+	var remaining = inf.Size()
+	var part int32 = 0
+	var parts = calculateTotalParts(inf.Size(), partSize)
+	for part < parts {
+		rn, err := file.Read(buf)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+
+		// whatever to do with buf
+
+		remaining = remaining - int64(rn)
+		if remaining < partSize {
+			buf = buf[:remaining]
+		}
+
+		part = part + 1
+	}
+}
+----
+
+* Line 33, allocate an array with fixed size.
+* Line 38, reuse the allocated memory.
+* Line 48, shrink the array size to fit to remaining bytes exactly.
+
+IMPORTANT: Make sure part size doesn't exceed file size.
+
+I don't provide examples in other languages, but the concept exists the same.
+

@@ -49,3 +49,8 @@ If you are at the end of the line, clears the entire line.
 
 == Scripting
 
+=== Redirection
+
+* `> dest 2>&1` or `&> dest` Redirecting both _stdout_ and _stderr_.
+* `>> dest 2>&1` or `&>> dest` Appending both _stdout_ and _stderr_.
+
