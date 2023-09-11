@@ -5,9 +5,9 @@
 
 Here are some helpful links instead:
 
-link:/[Home]
+https://jiezheng.org[Home]
 
-link:/archive/en[Posts in English]
+https://jiezheng.org/archive/en[Posts in English]
 
-link:/archive/zh[Posts in Chinese]
+https://jiezheng.org/archive/zh[Posts in Chinese]
 
