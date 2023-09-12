@@ -2,7 +2,7 @@
 Jie Zheng <prettykingking@live.com>
 :revdate: September 1, 2023
 :page-lang: en
-:page-layout: post
+:page-layout: post_en
 :page-category: Shell
 :page-description: Quickly find recipes to resolve shell tasks.
 

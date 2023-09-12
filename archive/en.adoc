@@ -1,4 +1,4 @@
 = Posts in English
 :page-lang: en
-:page-layout: archive
+:page-layout: archive_en
 :page-nav:

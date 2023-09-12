@@ -1,0 +1,25 @@
+{%- if page.nav -%}
+  <header class="header-logo-row">
+{%- else -%}
+  <header class="header-logo-row no-tabs header-shadow">
+{%- endif -%}
+  <div class="main-container text-center">
+    <a href="/archive/zh" class="header-title">杰的文章</a>
+  </div>
+</header>
+
+{%- if page.nav -%}
+<nav class="header-tabs header-shadow">
+  <div class="container d-flex justify-content-center">
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="/" class="nav-link">主页</a>
+      </li>
+      <li class="nav-item" active>
+        <a href="/archive/zh" class="nav-link">归档</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+{%- endif -%}
+

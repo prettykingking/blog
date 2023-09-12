@@ -2,7 +2,7 @@
 Jie Zheng <prettykingking@live.com>
 :revdate: September 10, 2023
 :page-lang: en
-:page-layout: post
+:page-layout: post_en
 :page-category: Go
 :page-description: Efficiently read file by part in Go.
 

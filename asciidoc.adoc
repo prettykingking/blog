@@ -3,8 +3,8 @@ Jie Zheng <prettykingking@live.com>
 :revdate: August 18, 2023
 :toc:
 :sectnums:
-:page-lang: zh
-:page-layout: post
+:page-lang: en
+:page-layout: post_en
 :page-category: Update Update
 :page-description: Lorem ipsum is placeholder text commonly used in the graphic, \
 print, and publishing industries for previewing layouts and visual mockups.
@@ -131,6 +131,18 @@ To refer to a range of codes, use the following form:
 ====
 an HTTP `2xx` or `400` status code
 ====
+
+For example, the placeholder `pass:[<var>PROJECT_ID</var>]` represents
+a project ID in sample code, commands, and example output.
+
+In the following example, `pass:[<var>GROUP</var>]` is required,
+but `pass:[<var>GLOBAL_FLAG</var>]` and `pass:[<var>FILENAME</var>]` are optional:
+
+[source,sh,subs="+quotes,+macros"]
+----
+gcloud dns pass:[<var>GROUP</var>] pass:[[<var>GLOBAL_FLAG</var>]] pass:[[<var>FILENAME</var>]]
+----
+
 
 === Listing as input
 

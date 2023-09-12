@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}">
+{% include head.html %}
+<body>
+
+<div class="header">
+{% include header_zh.html %}
+</div>
+
+<div class="main main-archive">
+  <main>
+    <div class="archives">
+      <div class="archive-group">
+        {%- assign posts = site.posts -%}
+        {%- assign last_date_group = "" -%}
+        {%- for post in posts -%}
+          {%- if post.lang == page.lang -%}
+            {%- assign post_date_group = post.date | date: "%Y%m" -%}
+
+            {%- if post_date_group != last_date_group -%}
+            {%- assign last_date_group = post.date | date: "%Y%m" -%}
+            {%- assign month = post.date | date: "%-m" -%}
+
+            {%- case month -%}
+              {%- when "1" -%}
+                {%- assign month_zh = "一" -%}
+              {%- when "2" -%}
+                {%- assign month_zh = "二" -%}
+              {%- when "3" -%}
+                {%- assign month_zh = "三" -%}
+              {%- when "4" -%}
+                {%- assign month_zh = "四" -%}
+              {%- when "5" -%}
+                {%- assign month_zh = "五" -%}
+              {%- when "6" -%}
+                {%- assign month_zh = "六" -%}
+              {%- when "7" -%}
+                {%- assign month_zh = "七" -%}
+              {%- when "8" -%}
+                {%- assign month_zh = "八" -%}
+              {%- when "9" -%}
+                {%- assign month_zh = "九" -%}
+              {%- when "10" -%}
+                {%- assign month_zh = "十" -%}
+              {%- when "11" -%}
+                {%- assign month_zh = "十一" -%}
+              {%- when "12" -%}
+                {%- assign month_zh = "十二" -%}
+              {%- else -%}
+                {%- assign month_zh = "" -%}
+              {%- endcase -%}
+            <div class="row gx-0">
+              <div class="col-12">
+                <h2 class="archive-group-title">{{ post.date | date: "月 %Y" | prepend: month_zh }}</h2>
+              </div>
+            </div>
+            {%- endif -%}
+
+            <div class="row gx-0">
+              <div class="col-12">
+                <a href="{{ post.url }}" class="archive">
+                  <div class="archive-content archive-no-picture">
+                    <p class="archive-topic">{{ post.category }}</p>
+                    <h4 class="archive-title">{{ post.title }}</h4>
+                    <p class="archive-date">{{ post.date | date: "%Y 年 %-m 月 %d 日" }}</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+
+        <div class="row gx-0">
+          <div class="col-12">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><span class="page-num">1</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% include footer.html %}
+
+<script async src="/static/js/main.d86b163d015d3b97ef8b.js"></script>
+</body>
+</html>

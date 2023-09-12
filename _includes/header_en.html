@@ -1,0 +1,25 @@
+{%- if page.nav -%}
+  <header class="header-logo-row">
+{%- else -%}
+  <header class="header-logo-row no-tabs header-shadow">
+{%- endif -%}
+  <div class="main-container text-center">
+    <a href="/archive/en" class="header-title">Jie's Posts</a>
+  </div>
+</header>
+
+{%- if page.nav -%}
+<nav class="header-tabs header-shadow">
+  <div class="container d-flex justify-content-center">
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item" active>
+        <a href="/archive/en" class="nav-link">Archive</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+{%- endif -%}
+

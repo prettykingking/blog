@@ -8,7 +8,7 @@ This is the blog source files presented at https://jiezheng.org.
 Consider not to include stop words to keep URL simple and short. Please read
 https://www.opinosis-analytics.com/knowledge-base/stop-words-explained/[What are stop words]?
 
-* https://github.com/igorbrigadir/stopwords/blob/master/en/terrier.txt[English stop words]
+* https://github.com/igorbrigadir/stopwords/blob/master/en/gensim.txt[English stop words]
 
 
 == Jekyll
