@@ -1,3 +1,5 @@
+- if source_lang
+  - lang_class = "lang-" + source_lang
 - if title?
   figure
     .code-listing data-lang=source_lang
@@ -9,7 +11,7 @@
             tbody
               tr
                 td
-                  pre class=nowrap? =content
+                  pre class=[nowrap?, (lang_class if source_lang)] =content
     figcaption =title
 - else
   .code-listing data-lang=source_lang
@@ -21,5 +23,5 @@
           tbody
             tr
               td
-                pre class=nowrap? =content
+                pre class=[nowrap?, (lang_class if source_lang)] =content
 

@@ -5,7 +5,7 @@
 <body>
 
 <div class="header">
-{%- include header.html -%}
+{% include header_en.html %}
 </div>
 
 <div class="main">
@@ -20,7 +20,7 @@
                     <a class="topic-link" href="#">{{ page.category }}</a>
                   </div>
                   <div class="article-date">
-                    {{ page.date | date: date_format }}
+                    {{ page.date | date: "%B %-d, %Y" }}
                   </div>
                 </div>
                 <div class="article-title">

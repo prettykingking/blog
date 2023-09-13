@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en" }}">
-{%- include head.html -%}
+{% include head.html %}
 <body>
 
 <div class="header">
-{%- include header.html -%}
+{% include header_en.html %}
 </div>
 
 <div class="main main-archive">
   <main>
     <div class="archives">
       <div class="archive-group">
-        {% assign posts = site.posts %}
-        {% assign last_date_group = "" %}
+        {%- assign posts = site.posts -%}
+        {%- assign last_date_group = "" -%}
         {%- for post in posts -%}
-          {% if post.lang == page.lang %}
-            {% assign post_date_group = post.date | date: "%Y-%m" %}
+          {%- if post.lang == page.lang -%}
+            {%- assign post_date_group = post.date | date: "%Y%m" -%}
 
-            {% if post_date_group != last_date_group %}
-            {% assign last_date_group = post.date | date: "%Y-%m" %}
+            {%- if post_date_group != last_date_group -%}
+            {%- assign last_date_group = post.date | date: "%Y%m" -%}
             <div class="row gx-0">
               <div class="col-12">
-                <h2 class="archive-group-title">{{ post.date | date: date_group_format }}</h2>
+                <h2 class="archive-group-title">{{ post.date | date: "%B %Y" }}</h2>
               </div>
             </div>
-            {% endif %}
+            {%- endif -%}
 
             <div class="row gx-0">
               <div class="col-12">
@@ -32,13 +32,13 @@
                   <div class="archive-content archive-no-picture">
                     <p class="archive-topic">{{ post.category }}</p>
                     <h4 class="archive-title">{{ post.title }}</h4>
-                    <p class="archive-date">{{ post.date | date: date_format }}</p>
+                    <p class="archive-date">{{ post.date | date: "%B %-d, %Y" }}</p>
                   </div>
                 </a>
               </div>
             </div>
-          {% endif %}
-        {% endfor %}
+          {%- endif -%}
+        {%- endfor -%}
 
         <div class="row gx-0">
           <div class="col-12">
@@ -52,7 +52,7 @@
   </main>
 </div>
 
-{%- include footer.html -%}
+{% include footer.html %}
 
 <script async src="/static/js/main.d86b163d015d3b97ef8b.js"></script>
 </body>

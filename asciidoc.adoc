@@ -138,15 +138,13 @@ a project ID in sample code, commands, and example output.
 In the following example, `pass:[<var>GROUP</var>]` is required,
 but `pass:[<var>GLOBAL_FLAG</var>]` and `pass:[<var>FILENAME</var>]` are optional:
 
-[source,sh,subs="+quotes,+macros"]
+[source,sh,subs="+macros"]
 ----
 gcloud dns pass:[<var>GROUP</var>] pass:[[<var>GLOBAL_FLAG</var>]] pass:[[<var>FILENAME</var>]]
 ----
 
 
 === Listing as input
-
- $ cd secure/vault/defops
 
 [listing]
 This is an example of a paragraph assigned
@@ -162,7 +160,10 @@ The content inside is displayed as <pre> text.
 
 === Literal as output
 
-    ~/secure/vault/defops
+    ssh-rsa KEY_VALUE USERNAME
+
+[literal,subs="+macros"]
+ssh-rsa +++<var>KEY_VALUE</var>+++ +++<var>USERNAME</var>+++
 
 [literal]
 error: 1954 Forbidden search
