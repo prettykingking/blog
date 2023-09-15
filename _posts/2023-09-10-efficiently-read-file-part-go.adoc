@@ -4,7 +4,7 @@ Jie Zheng <prettykingking@live.com>
 :page-lang: en
 :page-layout: post_en
 :page-category: Go
-:page-description: Efficiently read file by part in Go.
+:page-description: Utilize allocated memory to efficiently read file by part in Go.
 
 You can read text files line by line. Also you can read binary files part by part,
 especially when dealing with large files. The part size depends on your actual need.
