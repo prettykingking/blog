@@ -364,6 +364,15 @@ Here's a list of things that can go wrong, in no particular order:
 
 * Your bicycle might explode.
 * The sun might go out.
++
+[%linenums,c]
+----
+#include <stdio.h>
+int main() {
+    printf("Hello Jie");
+    return 0;
+}
+----
 * An ant might break its leg and require a tiny splint.
 
 === Description list
