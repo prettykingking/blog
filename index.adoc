@@ -7,12 +7,34 @@ You could contact me at #prettykingking@live.com#.
 I occasionally write posts about various topics in link:/archive/en[English]
 or link:/archive/zh[Chinese], mostly technical.
 
-Here are some links you could find me on:
+I am https://github.com/prettykingking[prettykingking] on Github.
 
-* https://github.com/prettykingking[prettykingking] on Github.
 
 == Projects
 
 https://github.com/prettykingking/snowflake[Snowflake]:: GUID(Globally Unique ID)
 Generation Service written in Golang.
+
+
+== Reading
+
+I collected links for reference in the future. As for now, they can
+all fit into one page. Using the browser's Find +++<i class="bi bi-search"></i>+++
+can quickly jump to links. See link:/bookmarks[Bookmarks].
+
+I save links to read later. They can be any study not limited to
+technology. Check my link:/reading-list[Reading List].
+
+link:/books[Books] I read or would like to read.
+
+
+== Notes
+
+There are many note taking apps with auto-sync feature cross platform, but
+I prefer using https://asciidoc.org[AsciiDoc] markup language for professional notes.
+There is no sensitive information in them, so I put them in public.
+This is very convenient to look up anytime I need.
+The pieces in notes are not in any conceptual order, and too short to be
+published as a post.
+Take a look only if you are interested. See link:/notes[Notes].
 
