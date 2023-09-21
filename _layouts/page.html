@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}">
+{%- include head.html -%}
+<body>
+
+<div class="header">
+<header class="header-logo-row no-tabs header-shadow">
+  <div class="main-container text-center">
+    <a href="/" class="header-title">Home</a>
+  </div>
+</header>
+</div>
+
+<div class="main">
+    <main>
+      <div class="main-container">
+        <div class="row gx-0">
+          <div class="col-12">
+            <article class="article">
+              <div class="article-header component-text">
+                <div class="article-title">
+                  <h1 class="h1">{{ page.title }}</h1>
+                </div>
+                <div class="article-subhead">
+                  {{ page.description }}
+                </div>
+              </div>
+
+              {{ content }}
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+= C/C++
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: Collected links to read later.
+
+C/C++ programming language.
+
+

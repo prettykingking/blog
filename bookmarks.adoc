@@ -1,0 +1,36 @@
+= Bookmarks
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: Collected links to read later.
+
+The kind of links, could be article, news, blog post, or blog I follow.
+Categories are not in specific order.
+
+== Computer Science
+
+* link:/bookmarks/algorithms[Algorithms]
+* Security
+* Networking
+* Shell
+* System
+* Database
+* Multimedia
+* link:/bookmarks/c[C/C++]
+* Java
+* Erlang/Elixir
+* Go
+* Python
+* Javascript
+* Tools
+* Android
+* Programming
+
+
+== Miscellaneous
+
+* Blog
+* Mathematics
+* Windows
+* Human and Nature
+

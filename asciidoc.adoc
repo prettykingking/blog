@@ -4,7 +4,7 @@ Jie Zheng <prettykingking@live.com>
 :toc:
 :sectnums:
 :page-lang: en
-:page-layout: post_en
+:page-layout: page
 :page-category: Update Update
 :page-description: Lorem ipsum is placeholder text commonly used in the graphic, \
 print, and publishing industries for previewing layouts and visual mockups.
