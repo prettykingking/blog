@@ -18,23 +18,12 @@ Generation Service written in Golang.
 
 == Reading
 
-I collected links for reference in the future. As for now, they can
-all fit into one page. Using the browser's Find +++<i class="bi bi-search"></i>+++
-can quickly jump to links. See link:/bookmarks[Bookmarks].
+I collected links here as my bookmarks. Thay are all at public domains.
+It's very convenient for me to look up at any time.
+Using the browser's Find +++<i class="bi bi-search"></i>+++
+can quickly jump to links. Look up link:/bookmarks[Bookmarks] only if you are
+interested.
 
-I save links to read later. They can be any study not limited to
-technology. Check my link:/reading-list[Reading List].
-
-link:/books[Books] I read or would like to read.
-
-
-== Notes
-
-There are many note taking apps with auto-sync feature cross platform, but
-I prefer using https://asciidoc.org[AsciiDoc] markup language for professional notes.
-There is no sensitive information in them, so I put them in public.
-This is very convenient to look up anytime I need.
-The pieces in notes are not in any conceptual order, and too short to be
-published as a post.
-Take a look only if you are interested. See link:/notes[Notes].
+The link:/books[Books] I read or would like to read.
+You may pick one as interested.
 
