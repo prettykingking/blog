@@ -1,0 +1,54 @@
+= Blogs I Read
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: Blogs I read usually.
+
+Some blogs support RSS subscription, some are just simple pages. So I don't
+use RSS reader. I only read them as i got time.
+
+== C/C++
+
+https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
+
+
+== Java World
+
+* https://www.allthingsdistributed.com[Werner Vogels] - Amazon AWS CTO
+* https://mechanical-sympathy.blogspot.com[Martin Thompson] - Java Champion
+** https://aeron.io[Aeron]
+* https://trishagee.com[Trisha] - Java Champion
+* http://blog.tremblay.pro/[Henri Tremblay] - Java Champion
+* https://vanilla-java.github.io[Peter K Lawrey] - Vanilla Java
+* https://vladmihalcea.com[Vlad Mihalcea] - Author of High Performance Java Persistence
+* https://t.motd.kr[Trustin Lee] - Netty Author
+* https://martinfowler.com[Martin Fowler]
+* https://leon-wtf.github.io/[Mostly Java]
+
+== System World
+
+* https://www.reddit.com/r/linux/comments/hzyu8j/im_jason_a_donenfeld_security_researcher_kernel/[Jason A. Donenfeld]
+- Kernel Developer
+* https://blog.gslin.org[Gea-Suan Lin]
+* https://strikefreedom.top[Pan Jianfeng] - The author of gnet and ants
+
+== Rust
+
+https://www.ncameron.org/blog/[Nicholas Cameron] - Former Microsoft Principle Engineer
+
+
+== Cryptographer
+
+https://www.aumasson.jp[JP Aumasson] - Cryptographer
+
+
+== Web
+
+* https://madebyevan.com[Evan Wallace]
+* https://lea.verou.me[Lea Verou]
+
+
+== Miscellaneous
+
+* https://cjting.me[CJ Ting]
+* https://www.craftz.dog/posts[Takuya Matsuyama] - Ink Drop Founder
