@@ -22,14 +22,13 @@ https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
 * https://vanilla-java.github.io[Peter K Lawrey] - Vanilla Java
 * https://vladmihalcea.com[Vlad Mihalcea] - Author of High Performance Java Persistence
 * https://t.motd.kr[Trustin Lee] - Netty Author
-* https://martinfowler.com[Martin Fowler]
+* https://martinfowler.com[Martin Fowler] - Software development
 * https://leon-wtf.github.io/[Mostly Java]
 
 == System World
 
-* https://www.reddit.com/r/linux/comments/hzyu8j/im_jason_a_donenfeld_security_researcher_kernel/[Jason A. Donenfeld]
-- Kernel Developer
-* https://blog.gslin.org[Gea-Suan Lin]
+* https://www.reddit.com/r/linux/comments/hzyu8j/im_jason_a_donenfeld_security_researcher_kernel/[Jason A. Donenfeld] - Kernel Developer
+* https://blog.gslin.org[Gea-Suan Lin] - DevOps
 * https://strikefreedom.top[Pan Jianfeng] - The author of gnet and ants
 
 == Rust
@@ -45,8 +44,8 @@ https://www.aumasson.jp[JP Aumasson] - Cryptographer
 == Web
 
 * https://agafonkin.com[Volodymyr Agafonkin] - Map Expert
-* https://madebyevan.com[Evan Wallace]
-* https://lea.verou.me[Lea Verou]
+* https://madebyevan.com[Evan Wallace] - Figma CTO
+* https://lea.verou.me[Lea Verou] - W3C member, CSS pundit
 
 
 == Miscellaneous

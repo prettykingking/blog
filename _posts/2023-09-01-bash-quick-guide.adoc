@@ -49,8 +49,29 @@ If you are at the end of the line, clears the entire line.
 
 == Scripting
 
-=== Redirection
+Check https://devhints.io/bash[Cheatsheet] for syntax.
 
-* `> dest 2>&1` or `&> dest` Redirecting both _stdout_ and _stderr_.
-* `>> dest 2>&1` or `&>> dest` Appending both _stdout_ and _stderr_.
+More detailed tutorial:
 
+* https://devdocs.io/bash/[Bash docs]
+* https://aaltoscicomp.github.io/linux-shell/[Shell tutorial]
+* https://explainshell.com[Explain shell]
+
+=== Print 256 colors
+
+[source,shell]
+----
+for i in {0..255}; do
+  printf "\x1b[38;5;${i}mcolour${i}\n"
+done
+printf '%b' "\033[0m\n"
+----
+
+=== Generate random string
+
+Random string with 12 length
+
+[source,sh]
+----
+dd if=/dev/urandom count=1 2> /dev/null | base64 -i - | cut -c -12 -
+----
