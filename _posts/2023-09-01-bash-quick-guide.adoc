@@ -48,7 +48,7 @@ If you are at the end of the line, clears the entire line.
 
 == Scripting
 
-Check https://devhints.io/bash[Cheatsheet] for syntax.
+Check https://devhints.io/bash[Cheatsheet] for syntax,
 
 More detailed tutorial:
 

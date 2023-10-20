@@ -1,0 +1,15 @@
+= Almquist shell - The quick guide
+Jie Zheng <prettykingking@live.com>
+:revdate: October 20, 2023
+:page-lang: en
+:page-layout: post_en
+:page-category: Shell
+:page-description: Quickly find recipes to resolve shell tasks.
+
+Almquist shell written as a BSD-licensed replacement for the Bourne Shell;
+often used in resource-constrained environments.
+
+== Scripting
+
+Check https://www.grymoire.com/Unix/Sh.html[Cheatsheet] for syntax.
+
