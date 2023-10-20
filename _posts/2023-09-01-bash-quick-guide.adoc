@@ -13,7 +13,6 @@ time-saving skill.
 For full reference, check
 https://www.gnu.org/software/bash/manual/bash.html[GNU Bash Manual].
 
-
 == Command line interaction
 
 === Moving
@@ -57,14 +56,30 @@ More detailed tutorial:
 * https://aaltoscicomp.github.io/linux-shell/[Shell tutorial]
 * https://explainshell.com[Explain shell]
 
-=== Print 256 colors
+=== Font colors
 
-[source,shell]
+Common colors
+
 ----
-for i in {0..255}; do
-  printf "\x1b[38;5;${i}mcolour${i}\n"
-done
-printf '%b' "\033[0m\n"
+Black        0;30     Dark Gray    1;30
+Red          0;31     Light Red    1;31
+Green        0;32     Light Green  1;32
+Brown/Orange 0;33     Yellow       1;33
+Blue         0;34     Light Blue   1;34
+Purple       0;35     Light Purple 1;35
+Cyan         0;36     Light Cyan   1;36
+Light Gray   0;37     White        1;37
+
+No Color     0
+
+Bold Red           1;31
+High Intensity Red 0;91
+----
+
+Print RED in shell
+
+----
+printf "\033[0;91mRED\033[0m\n"
 ----
 
 === Generate random string
@@ -75,3 +90,21 @@ Random string with 12 length
 ----
 dd if=/dev/urandom count=1 2> /dev/null | base64 -i - | cut -c -12 -
 ----
+
+
+== FAQ
+
+=== Single quotes or double quotes?
+
+echo string can be included using single quotes or double quotes.
+But double quotes is preferred, because single quotes can't match end of file.
+When echo string using single quotes, there must be a semicolon at the end
+`echo 'Little King';`
+
+=== Single square brackets or double square brackets?
+
+Please refer to http://mywiki.wooledge.org/BashFAQ/031[Greg's Wiki]
+
+=== Can I do a spinner in Bash?
+
+Please refer to http://mywiki.wooledge.org/BashFAQ/034[Greg's Wiki].
