@@ -1,0 +1,26 @@
+= Database
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: Database management systems.
+
+OLTP, OLAP and In-Memory databases.
+
+== Distributed transaction
+
+Common solutions
+
+* Two-phase commit/XA
+* SAGA
+* TCC
+* Local messaging
+* Transactional messaging
+* Best-effort notification
+* Sub-transaction barrier
+
+Reference reading
+
+* https://www.atomikos.com/Documentation/SagasVsTwoPhaseCommitVsTCC[Saga vs 2PC vs TCC]
+* https://www.alibabacloud.com/blog/an-in-depth-analysis-of-distributed-transaction-solutions_597232[In-depth analysis of distributed transaction solution]
+* https://medium.com/@dongfuye/the-seven-most-classic-solutions-for-distributed-transaction-management-3f915f331e15[7 solutions for distributed transaction]
+

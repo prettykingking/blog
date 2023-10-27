@@ -14,7 +14,7 @@ Categories are not in specific order.
 * Networking
 * Shell
 * System
-* Database
+* link:/bookmarks/database[Database]
 * Multimedia
 * link:/bookmarks/c[C/C++]
 * link:/bookmarks/java[Java]
