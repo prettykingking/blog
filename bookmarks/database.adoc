@@ -6,6 +6,16 @@ Jie Zheng <prettykingking@live.com>
 
 OLTP, OLAP and In-Memory databases.
 
+== MySQL
+
+=== Schema-less in MySQL
+
+* https://backchannel.org/blog/friendfeed-schemaless-mysql[Original FriendFeed Design]
+* https://eng.uber.com/schemaless-part-one-mysql-datastore/[Uber part one]
+* https://eng.uber.com/schemaless-part-two-architecture/[Uber part two]
+* https://eng.uber.com/schemaless-part-three-datastore-triggers/[Uber part three]
+
+
 == Distributed transaction
 
 Common solutions

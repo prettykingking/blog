@@ -91,6 +91,22 @@ Random string with 12 length
 dd if=/dev/urandom count=1 2> /dev/null | base64 -i - | cut -c -12 -
 ----
 
+=== Keep runing after logging off
+
+The `&` symbol at the end send it to the background.
+
+[source,sh,subs="+macros"]
+----
+nohup [+++<var>CMD</var>+++] > nohup.out &
+----
+
+Unlike `nohup`, `disown` is used after you started a process.
+
+[source,sh,subs="+macros"]
+----
+disown [+++<var>PID</var>+++]
+----
+
 
 == FAQ
 
