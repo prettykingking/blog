@@ -2,8 +2,46 @@
 Jie Zheng <prettykingking@live.com>
 :page-lang: en
 :page-layout: page
-:page-description: Collected links to read later.
+:page-description: C/C++ programming language.
 
-C/C++ programming language.
+Every language employs the C programming language to varying degrees.
+
+== Tutorial
+
+* https://www.learncpp.com[Learn C++]
+* https://bottomupcs.com/index.html[BottomUp Computer Science]
+* https://matt.sh/howto-c[How to C in 2016]
+* https://diveintosystems.org/book/[Dive into Systems]
+* http://beej.us/guide/bgc/html/index-wide.html[Beej's guide to C]
+* https://en.wikibooks.org/wiki/C_Programming[C Programming]
+* https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards[SEI CERT Coding Standards]
+* https://wangdoc.com/clang/[Mr. Ruan]
+* https://en.cppreference.com/w/Main_Page[C++ reference]
+* https://www.cs.rit.edu/~cs4/[Think in C++ 2nd]
 
 
+== Wiki
+
+* https://ocw.mit.edu/courses/6-088-introduction-to-c-memory-management-and-c-object-oriented-programming-january-iap-2010/pages/lecture-notes/[MIT C memory management]
+* https://en.wikibooks.org/wiki/C_Programming/Standard_library_reference[Standard library reference]
+* https://abstractexpr.com/2023/06/29/structures-in-c-from-basics-to-memory-alignment/[Structures in C]
+* https://www.deusinmachina.net/p/c-strings-and-my-slow-descent-to[C strings]
+* https://tmewett.com/c-tips/[C tips]
+* https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html[A RegEx by Rob Pike]
+* http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines[C++ core guidelines]
+
+
+== Build system
+
+* https://ninja-build.org/[Ninja]
+* https://mesonbuild.com/[Meson]
+* https://bazel.build/[Bazel]
+* https://cmake.org/[CMake]
+* https://carlosvin.github.io/langs/en/posts/choosing-modern-cpp-stack/[Moder CPP stack]
+
+
+== Make your own
+
+* https://build-your-own.org[Build your own from scratch]
+* http://craftinginterpreters.com/contents.html[Crafting interpreters]
+* http://gameprogrammingpatterns.com/contents.html[Game programming patterns]
