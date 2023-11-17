@@ -1,0 +1,34 @@
+= Algorithms
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: Data Structure and Algorithms.
+
+Programming = Data Structure + Algorithms.
+
+== NLP
+
+* https://nlp.stanford.edu/IR-book/information-retrieval-book.html[Introduction to Information Retrieval]
+* https://nlp.stanford.edu[Stanford CoreNLP]
+* https://www.nltk.org/[NLTK]
+* https://github.com/RaRe-Technologies/gensim[Gensim]
+* https://spacy.io/[spaCy]
+* https://github.com/HIT-SCIR/ltp[哈工大 LTP]
+* https://github.com/baidu/lac[百度 LAC]
+* https://fasttext.cc/[FastText]
+* https://github.com/sloria/TextBlob[Text Blob]
+* https://github.com/isnowfy/snownlp[Snow NLP]
+* https://github.com/clips/pattern/[Pattern]
+* https://keras.io/[Keras]
+* https://github.com/sebastianruder/NLP-progress[NLP Progress]
+* https://github.com/didi/ChineseNLP[State of the art Chinese NLP]
+
+=== Word Segmentation
+
+* https://github.com/hankcs/HanLP[HanLP]
+* https://github.com/ownthink/Jiagu[Jiagu]
+* https://github.com/NLPIR-team/NLPIR[NLPIR]
+* https://github.com/lionsoul2014/friso[Friso]
+* https://github.com/lionsoul2014/jcseg[JCSeg]
+* https://github.com/lancopku/PKUSeg-python[Peking University]
+
