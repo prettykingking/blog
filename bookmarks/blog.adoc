@@ -7,6 +7,11 @@ Jie Zheng <prettykingking@live.com>
 Some blogs support RSS subscription, some are just simple pages. So I don't
 use RSS reader. I only read them as i got time.
 
+== Algorithms
+
+https://sedgewick.io[Robert Sedgewick] - Algorithm Science
+
+
 == C/C++
 
 https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
