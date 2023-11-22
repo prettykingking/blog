@@ -12,7 +12,7 @@ SCRIPT_DIR="$(cd "$(dirname "${0}")" && pwd -P)"
 . "$SCRIPT_DIR"/functions.sh
 
 # define constants
-SUDO_USER=www-data
+SITE_USER=www-data
 
 # script usage
 function usage() {
@@ -31,7 +31,7 @@ $(colorize 'ARGUMENTS' 0 1)
 $(colorize 'OPTIONS' 0 1)
   -h, --help    show usage
   --dry-run     run without any changes
-  --sudo        (default: $SUDO_USER) ownership for extracted files
+  --site-user   (default: $SITE_USER) ownership for extracted files
 
 EOF
   exit 0
@@ -59,7 +59,7 @@ function parse_params() {
   dry_run=0
 
   # define options
-  sudo_user="$SUDO_USER"
+  site_user="$SITE_USER"
 
   while :; do
     case "${1-}" in
@@ -74,7 +74,7 @@ function parse_params() {
 
     # parse options
     --sudo-user)
-        sudo_user="${2-}"
+        site_user="${2-}"
         ((options_count += 1))
         shift
         ;;
@@ -99,7 +99,7 @@ function parse_params() {
 
   # define arguments
   archive=''
-  dir=''
+  archive_dir=''
 
   # parse args
   for arg in "${args[@]}"; do
@@ -112,7 +112,7 @@ function parse_params() {
         archive="$arg"
       fi
       if ((args_count == 2)); then
-        dir="$arg"
+        archive_dir="$arg"
       fi
     fi
   done
@@ -133,19 +133,19 @@ function deploy() {
     quit 'did not make any change'
   fi
 
-  if [[ ! -d "$dir" ]]; then
-    mkdir "$dir"
-    chown "$sudo_user":"$sudo_user" "$dir"
+  if [[ ! -d "$archive_dir" ]]; then
+    mkdir "$archive_dir"
+    chown "$site_user":"$site_user" "$archive_dir"
   else
-    if [[ "$dir" = '/' ]]; then
-      error "very very dangerous action to delete $dir"
+    if [[ "$archive_dir" = '/' ]]; then
+      error "very very dangerous action to delete $archive_dir"
     fi
 
-    sudo -u "$sudo_user" rm -r "$dir"/*
+    sudo -u "$site_user" rm -r "$archive_dir"/*
   fi
 
-  sudo -u "$sudo_user" \
-       tar -xj -f "$archive" -C "$dir" .
+  sudo -u "$site_user" \
+       tar -xj -f "$archive" -C "$archive_dir" .
 }
 
 # run application
@@ -154,7 +154,7 @@ function run() {
 
   deploy
 
-  quit "$archive has been extracted to $dir."
+  quit "$archive has been extracted to $archive_dir."
 }
 
 run "$@"

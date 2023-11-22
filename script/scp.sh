@@ -12,7 +12,9 @@ SCRIPT_DIR="$(cd "$(dirname "${0}")" && pwd -P)"
 . "$SCRIPT_DIR"/functions.sh
 
 # define constants
-SITE_DIR=_site/
+SRC=_site/
+ARCHIVE=blog
+ARCHIVE_DIR=/var/www/html/archive
 
 # script usage
 function usage() {
@@ -30,7 +32,9 @@ $(colorize 'ARGUMENTS' 0 1)
 $(colorize 'OPTIONS' 0 1)
   -h, --help    show usage
   --dry-run     run without any changes
-  --source      (default: $SITE_DIR) source directory
+  --source      (default: $SRC) source directory
+  --archive     (default: $ARCHIVE) archive name on remote machine
+  --archive-dir (default: $ARCHIVE_DIR) archive directory on remote machine
 
 EOF
   exit 0
@@ -58,7 +62,9 @@ function parse_params() {
   dry_run=0
 
   # define options
-  source="$SITE_DIR"
+  source="$SRC"
+  archive="$ARCHIVE"
+  archive_dir="$ARCHIVE_DIR"
 
   while :; do
     case "${1-}" in
@@ -74,6 +80,16 @@ function parse_params() {
     # parse options
     --source)
         source="${2-}"
+        ((options_count += 1))
+        shift
+        ;;
+    --archive)
+        archive="${2-}"
+        ((options_count += 1))
+        shift
+        ;;
+    --archive-dir)
+        archive_dir="${2-}"
         ((options_count += 1))
         shift
         ;;
@@ -97,7 +113,7 @@ function parse_params() {
   done
 
   # define arguments
-  target=''
+  dest=''
 
   # parse args
   for arg in "${args[@]}"; do
@@ -107,7 +123,7 @@ function parse_params() {
       # define positional arguments here
 
       if ((args_count == 1)); then
-        target="$arg"
+        dest="$arg"
       fi
     fi
   done
@@ -118,11 +134,13 @@ function parse_params() {
 
   # validate params
   if [[ -z "$source" ]]; then
-    error 'missing source file'
+    error 'missing source directory'
   fi
-
-  if [[ -z "$target" ]]; then
-    error 'missing target file'
+  if [[ -z "$archive" ]]; then
+    error 'missing archive name'
+  fi
+  if [[ -z "$dest" ]]; then
+    error 'missing remote machine'
   fi
 
   if [[ ! -d "$source" ]]; then
@@ -133,23 +151,23 @@ function parse_params() {
 # define more functions
 
 function put() {
-  local archive="site.tar.bz2"
+  local archive_temp="site.tar.bz2"
 
   if [[ "$dry_run" -eq 1 ]]; then
     quit 'did not make any change'
   fi
 
-  tar -cj -f "$archive" -C "$source" .
+  tar -cj -f "$archive_temp" -C "$source" .
 
-  if [[ ! -f "$archive" ]]; then
-    error "could not create archive $archive"
+  if [[ ! -f "$archive_temp" ]]; then
+    error "could not create temporary archive $archive_temp"
   fi
 
-  scp "$archive" "$target"
+  scp "$archive_temp" "$dest":"$archive_dir"/"$archive".tar.bz2
 
   # remove archive
-  info 'clean up archive'
-  rm "$archive"
+  info "clean up temporary archive $archive_temp"
+  rm "$archive_temp"
 }
 
 # run application
