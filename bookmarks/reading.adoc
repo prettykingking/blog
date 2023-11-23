@@ -1,8 +1,23 @@
-= Books
+= Reading list
 Jie Zheng <prettykingking@live.com>
 :page-lang: en
 :page-layout: page
-:page-description: Books I read or would like to read.
+:page-description: Online or paper books I read or would like to read.
 
 Read about someone else's life, it might change your own.
+
+
+== Sciense
+
+* https://ocw.mit.edu/[MIT Open Course Ware]
+* https://www.usenix.org/publications[USENIX publications]
+* https://www.reddit.com/r/engineering/comments/g47mdc/springer_textbooks_compiled/[Springer free textbooks during 2020 COVID-19 lockdown].
+
+
+== Computer sciense
+
+* https://people.freebsd.org/~lstewart/articles/cpumemory.pdf[CPU Memory]
+* https://floating-point-gui.de[Floating Point Number]
+* https://unicodebook.readthedocs.io/index.html[Programming with Unicode]
+* https://herbcaudill.com/words/20190219-rewrite-refactor-reinvent[Rewrite, refactor or reinvent?]
 
