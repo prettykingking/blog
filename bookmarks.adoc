@@ -26,9 +26,9 @@ Categories are not in specific order.
 * Android
 * Programming
 
-
 == Miscellaneous
 
+* link:/bookmarks/reading[Reading]
 * link:/bookmarks/blog[Blog]
 * Mathematics
 * Windows

@@ -24,6 +24,3 @@ Using the browser's Find +++<i class="bi bi-search"></i>+++
 can quickly jump to links. Look up link:/bookmarks[Bookmarks] only if you are
 interested.
 
-The link:/books[Books] I read or would like to read.
-You may pick one as interested.
-
