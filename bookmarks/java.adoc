@@ -6,7 +6,40 @@ Jie Zheng <prettykingking@live.com>
 
 Java programming language.
 
+
+== JDK
+
+* https://bell-sw.com/announcements/2022/09/01/avoiding-side-effects-of-containerization/[Java Containerization]
+* https://aws.amazon.com/corretto[Amazon Correto]
+* https://bell-sw.com/pages/downloads/[BellSoft Liberica]
+* https://www.microsoft.com/openjdk[Microsoft OpenJDK]
+* https://www.azul.com/downloads/?package=jdk[Azul Zulu]
+* https://www.eclipse.org/openj9/[Eclipse OpenJ9]
+* https://adoptopenjdk.net[Adopt OpenJDK]
+* https://www.tornadovm.org[TornadoVM]
+* https://adoptium.net[Adoptium]
+* http://whichjdk.com[Which JDK]
+** https://stackoverflow.com/questions/58250782/which-free-version-of-java-can-i-use-for-production-environments-and-or-commerci[Free JDK]
+
+
+== Tutorials
+
+* https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java[CMU SEI CERT Coding Standard]
+* https://docs.oracle.com/javase/tutorial/index.html[Oracle tutorial]
+* https://docs.oracle.com/javase/tutorial/essential/io/index.html[Basic IO]
+* https://bell-sw.com/blog/[Bell Soft Blog]
+* https://www.baeldung.com/category/weekly-review/[Baeldung Weekly]
+
 == Collection
 
 https://fastutil.di.unimi.it[Fast Util] - Java Collection Extension
+
+
+== Wiki
+
+* https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/geninfo/diagnos/garbage_collect.html[Understanding memory management]
+* https://www.ibm.com/support/pages/recommended-maximum-heap-sizes-32-and-64-bit-websphere-java-instances[Recommended JVM heap size]
+* https://medium.com/swlh/how-to-easily-handle-emoji-unicode-in-java-ff905f264f98[How to handle Emoji in Java]
+* https://www.baeldung.com/thread-pool-java-and-guava[Thread pool in Java]
+* https://www.baeldung.com/jackson[Jackson]
 

@@ -29,6 +29,9 @@ https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
 * https://t.motd.kr[Trustin Lee] - Netty Author
 * https://martinfowler.com[Martin Fowler] - Software development
 * https://leon-wtf.github.io/[Mostly Java]
+* https://www.diguage.com/archives/[Diguage]
+* https://crossoverjie.top[CrossoverJie]
+
 
 == System World
 
