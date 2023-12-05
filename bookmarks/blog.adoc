@@ -9,7 +9,9 @@ use RSS reader. I only read them as i got time.
 
 == Algorithms
 
-https://sedgewick.io[Robert Sedgewick] - Algorithm Science
+* https://sedgewick.io[Robert Sedgewick] - Algorithm Science
+* https://gregbrockman.com/[Greg Brockman] - Former Stripe CTO, OpenAI for now.
+** https://blog.gregbrockman.com[His blog]
 
 
 == C/C++
