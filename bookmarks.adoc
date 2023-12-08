@@ -11,7 +11,7 @@ Categories are not in specific order.
 
 * link:/bookmarks/algorithms[Algorithms]
 * Security
-* Networking
+* link:/bookmarks/networking[Networking]
 * Shell
 * System
 * link:/bookmarks/database[Database]
