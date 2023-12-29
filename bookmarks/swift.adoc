@@ -1,0 +1,12 @@
+= Swift
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: Swift and Objective-C development.
+
+Apple Swift programming language.
+
+
+== Effective Swift
+
+https://swiftunboxed.com/internals/size-stride-alignment/[Struct memory alignment]

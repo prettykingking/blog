@@ -16,14 +16,14 @@ Categories are not in specific order.
 * System
 * link:/bookmarks/database[Database]
 * Multimedia
-* link:/bookmarks/c[C/C++]
-* link:/bookmarks/java[Java]
-* Erlang/Elixir
+* link:/bookmarks/c[C / C++]
+* link:/bookmarks/java[Java / Kotlin]
+* link:/bookmarks/swift[Swift / Objective-C]
+* Android
 * Go
 * Python
 * Javascript
 * Tools
-* Android
 * Programming
 
 == Miscellaneous
