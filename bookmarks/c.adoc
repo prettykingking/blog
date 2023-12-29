@@ -40,6 +40,14 @@ Every language employs the C programming language to varying degrees.
 * https://cmake.org/[CMake]
 * https://carlosvin.github.io/langs/en/posts/choosing-modern-cpp-stack/[Moder CPP stack]
 
+=== Makefile
+
+* https://makefiletutorial.com[Makefile tutorial]
+* https://berrendorf.inf.h-brs.de/sonstiges/make.html[Short introduction]
+* https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html[Automatic variables]
+* https://www.gnu.org/software/make/manual/html_node/Text-Functions.html[Text functions]
+* https://www.gnu.org/software/make/manual/html_node/Special-Targets.html[Special targets]
+
 
 == Make your own
 

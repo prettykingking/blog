@@ -9,6 +9,7 @@ Read about someone else's life, it might change your own.
 
 == Sciense
 
+* http://uu.diva-portal.org/smash/search.jsf[Uppsala University Publications]
 * https://ocw.mit.edu/[MIT Open Course Ware]
 * https://www.usenix.org/publications[USENIX publications]
 * https://www.reddit.com/r/engineering/comments/g47mdc/springer_textbooks_compiled/[Springer free textbooks during 2020 COVID-19 lockdown].
