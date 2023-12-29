@@ -16,7 +16,6 @@ Every language employs the C programming language to varying degrees.
 * http://beej.us/guide/bgc/html/index-wide.html[Beej's guide to C]
 * https://en.wikibooks.org/wiki/C_Programming[C Programming]
 * https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards[SEI CERT Coding Standards]
-* https://wangdoc.com/clang/[Mr. Ruan]
 * https://en.cppreference.com/w/Main_Page[C++ reference]
 * https://www.cs.rit.edu/~cs4/[Think in C++ 2nd]
 
