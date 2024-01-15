@@ -29,6 +29,7 @@ Every language employs the C programming language to varying degrees.
 * https://tmewett.com/c-tips/[C tips]
 * https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html[A RegEx by Rob Pike]
 * http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines[C++ core guidelines]
+* https://users.cs.northwestern.edu/~riesbeck/programming/c++/stl-summary.html[STL summary]
 
 
 == Build system
