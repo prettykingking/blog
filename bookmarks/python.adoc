@@ -1,0 +1,16 @@
+= Python
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: The Python programming language.
+
+The Python programming language.
+
+
+== Geo coordination
+
+* https://janakiev.com/blog/gps-points-distance-python/[Calculate Distance Between GPS Points in Python]
+* https://towardsdatascience.com/geospatial-indexing-with-ubers-h3-766399b690c[Geospatial Indexing with Uber’s H3]
+* https://medium.com/@alexander.mueller/experiments-with-in-memory-spatial-radius-queries-in-python-e40c9e66cf63[Fast In-memory spatial radius queries with Python]
+* https://automating-gis-processes.github.io/site/notebooks/L3/nearest-neighbor-faster.html[Nearest neighbor analysis with large datasets]
+

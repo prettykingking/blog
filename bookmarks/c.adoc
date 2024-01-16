@@ -8,7 +8,6 @@ Every language employs the C programming language to varying degrees.
 
 == Tutorial
 
-* https://cisco.github.io/ChezScheme/[Chez Scheme]
 * https://www.learncpp.com[Learn C++]
 * https://bottomupcs.com/index.html[BottomUp Computer Science]
 * https://matt.sh/howto-c[How to C in 2016]

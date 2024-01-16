@@ -1,0 +1,91 @@
+= JavaScript
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: JavaScript on the Web.
+
+Most well-known scripting language for Web pages.
+
+
+== Tutorial
+
+* https://eloquentjavascript.net/[Eloquent Javascript]
+* https://javascript.info[The Modern JavaScript Tutorial]
+* https://exploringjs.com/deep-js/toc.html[Deep Javascript]
+* https://johnresig.com[JQuery author]
+* http://www.2ality.com[2ality]
+* https://www.javascripttutorial.net[Comprehensive tutorial]
+* https://www.javascriptstuff.com/css-modules-by-example/[CSS Modules]
+
+== Awesome libraries
+
+=== Visualization
+
+* https://github.com/leeoniya/uPlot[uPlot]
+* https://github.com/danvk/dygraphs[Dygraphs]
+* https://www.flotcharts.org/[Flot]
+* https://c3js.org/[C3]
+* https://d3js.org/[D3]
+* https://visjs.org/[Vis]
+
+=== JQuery
+
+* http://stickyjs.com/[StickyJS]
+* https://github.com/jquery/jquery-mousewheel[MouseWheel]
+
+== ES5
+
+* https://es5.github.io[Annotated ES5]
+* http://javascript.info/tutorial/dom[DOM]
+* http://benalman.com/news/2010/11/immediately-invoked-function-expression/[IIFE]
+
+=== Frameworks
+
+* http://dojotoolkit.org[Dojo Toolkit]
+* https://mootools.net[Mootools]
+* http://prototypejs.org[Prototype JS]
+
+
+== Web
+
+* http://taligarsiel.com/Projects/howbrowserswork1.htm[How browsers work]
+
+=== CSS
+
+* http://desandro.github.io/3dtransforms/[3D transforms]
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/[Flexbox Guide]
+* https://lea.verou.me/2018/05/responsive-tables-revisited/[Responsive Table]
+* https://alexandergottlieb.com/2018/02/22/overflow-scroll-and-the-right-padding-problem-a-css-only-solution/[The Right Padding Problem]
+
+
+==== Animation
+
+* https://www.sitepoint.com/our-top-9-animation-libraries/[Top 9 animation libraries]
+* https://css-tricks.com/css-animation-libraries/[Animation libraries]
+* https://animate.style/[Animate]
+* https://www.minimamente.com/project/magic/[Magic]
+* http://ianlunn.github.io/Hover/[Hover]
+* https://animista.net/[Animista]
+* http://animation.kaustubhmenon.com/[Animation]
+* http://jonsuh.com/hamburgers[Hamburgers]
+* http://whirl.netlify.app/[Whirl]
+* https://kristofferandreasen.github.io/wickedCSS/[Wicked CSS]
+* https://nzbin.github.io/three-dots/[ThreeDots]
+* https://elrumordelaluz.github.io/csshake/[CSS Hake]
+* https://vaibhav111tandon.github.io/vov.css/[Vov]
+* https://erictreacy.github.io/mimic.css/[Mimic]
+* https://sarthology.github.io/Animatopy/[Animatopy]
+
+
+=== Performance
+
+* https://www.industrialempathy.com/[Designing very large javascript application]
+* https://calendar.perfplanet.com/2023/[Web performance calendar]
+
+
+=== Web design
+
+* https://www.sarasoueidan.com/blog/focus-indicators/[Focus indicators]
+* https://readymag.com/artemtiunov/RingUILanguage/[RingUI language]
+
+
