@@ -1,0 +1,44 @@
+= Git 代理设置
+Jie Zheng <prettykingking@live.com>
+:revdate: January 21, 2024
+:page-lang: zh
+:page-layout: post_zh
+:page-category: Git
+:page-description: 多协议 Git 代理
+
+开源社区 Github 在国内连接非常不稳定，因为某种网络限制，超时导致无法连接的情况时常发生。
+GitHub 作为最大的全球开源协作平台，为确保随时都能稳定使用，就需要可以连接到 Github 的网络代理服务了。
+当紧急情况需要下载所需代码时，而又一次次连接失败，简直太令人恼火了。
+
+
+== 三个协议
+
+Git 仓库托管服务，对于 `fetch` 和 `push` 通常会支持三种协议，分别为 `git://`, `ssh://`, 和
+`http://`。其中 `git` 和 `ssh` 是同一种协议，只是 scheme 不同，但在设置时会有所区别。
+
+== 代理设置
+
+下面分别介绍两种常用协议 `ssh` 和 `http` 的设置。
+
+NOTE: `git://` 协议代理设置较为复杂，可以参考 https://git-scm.com/docs/git-config#EXAMPLES[Example]。
+
+=== HTTP
+
+仅需全局配置 Git 代理，`https` 或 `socks5` 均可。
+
+[source,sh,subs="+macros"]
+----
+git config --global http.proxy socks5://pass:[<var>PROXY</var>]
+----
+
+=== SSH
+
+编辑 `~/.ssh/config` 文件，增加以下配置。`-X 5` 代表 `socks5` 代理协议。
+如果是使用其它 Git 托管服务，将 `github.com` 替换为其它服务域名即可。
+
+[source,subs="+macros"]
+----
+Host github.com
+    ProxyCommand nc -X 5 -x pass:[<var>PROXY</var>] %h %p
+----
+

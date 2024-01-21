@@ -124,3 +124,4 @@ Please refer to http://mywiki.wooledge.org/BashFAQ/031[Greg's Wiki]
 === Can I do a spinner in Bash?
 
 Please refer to http://mywiki.wooledge.org/BashFAQ/034[Greg's Wiki].
+
