@@ -32,7 +32,6 @@ https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
 * https://martinfowler.com[Martin Fowler] - Software development
 * https://leon-wtf.github.io/[Mostly Java]
 * https://www.diguage.com/archives/[Diguage]
-* https://crossoverjie.top[CrossoverJie]
 
 
 == System World
@@ -40,10 +39,6 @@ https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
 * https://www.reddit.com/r/linux/comments/hzyu8j/im_jason_a_donenfeld_security_researcher_kernel/[Jason A. Donenfeld] - Kernel Developer
 * https://blog.gslin.org[Gea-Suan Lin] - DevOps
 * https://strikefreedom.top[Pan Jianfeng] - The author of gnet and ants
-
-== Rust
-
-https://www.ncameron.org/blog/[Nicholas Cameron] - Former Microsoft Principle Engineer
 
 
 == Cryptographer
@@ -53,6 +48,7 @@ https://www.aumasson.jp[JP Aumasson] - Cryptographer
 
 == Web
 
+* https://marijnhaverbeke.nl/blog/[Marijn Haverbeke] - Author of CodeMirror
 * https://agafonkin.com[Volodymyr Agafonkin] - Map Expert
 * https://madebyevan.com[Evan Wallace] - Figma CTO
 * https://lea.verou.me[Lea Verou] - W3C member, CSS pundit
@@ -60,5 +56,6 @@ https://www.aumasson.jp[JP Aumasson] - Cryptographer
 
 == Miscellaneous
 
+* http://www.yinwang.org[Yin Wang] - PL expert
 * https://cjting.me[CJ Ting]
 * https://www.craftz.dog/posts[Takuya Matsuyama] - Ink Drop Founder
