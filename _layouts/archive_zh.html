@@ -49,14 +49,14 @@
               {%- else -%}
                 {%- assign month_zh = "" -%}
               {%- endcase -%}
-            <div class="row gx-0">
+            <div class="row">
               <div class="col-12">
                 <h2 class="archive-group-title">{{ post.date | date: "月 %Y" | prepend: month_zh }}</h2>
               </div>
             </div>
             {%- endif -%}
 
-            <div class="row gx-0">
+            <div class="row">
               <div class="col-12">
                 <a href="{{ post.url }}" class="archive">
                   <div class="archive-content archive-no-picture">
@@ -70,7 +70,7 @@
           {%- endif -%}
         {%- endfor -%}
 
-        <div class="row gx-0">
+        <div class="row">
           <div class="col-12">
             <ul class="pagination justify-content-center">
               <li class="page-item"><span class="page-num">1</span></li>
