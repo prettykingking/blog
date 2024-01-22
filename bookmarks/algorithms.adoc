@@ -11,6 +11,12 @@ https://www.algorist.com/algorist.html[The Stony Brook Algorithm Repository]
 by Steven S. Skiena.
 
 
+== By problems
+
+https://jackschaedler.github.io/handwriting-recognition/[Handwriting recognition] -
+https://jackschaedler.github.io/circles-sines-signals/[Circles, Sines and Signals]
+
+
 == NLP
 
 * https://nlp.stanford.edu/IR-book/information-retrieval-book.html[Introduction to Information Retrieval]
