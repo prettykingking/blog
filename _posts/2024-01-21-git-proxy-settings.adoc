@@ -11,7 +11,7 @@ Jie Zheng <prettykingking@live.com>
 当紧急情况需要下载所需代码时，而又一次次连接失败，简直太令人恼火了。
 
 
-== 三个协议
+== 三种协议
 
 Git 仓库托管服务，对于 `fetch` 和 `push` 通常会支持三种协议，分别为 `git://`, `ssh://`, 和
 `http://`。其中 `git` 和 `ssh` 是同一种协议，只是 scheme 不同，但在设置时会有所区别。
@@ -20,25 +20,26 @@ Git 仓库托管服务，对于 `fetch` 和 `push` 通常会支持三种协议�
 
 下面分别介绍两种常用协议 `ssh` 和 `http` 的设置。
 
-NOTE: `git://` 协议代理设置较为复杂，可以参考 https://git-scm.com/docs/git-config#EXAMPLES[Example]。
+TIP: `git://` 协议代理设置较为复杂，可以参考 https://git-scm.com/docs/git-config#EXAMPLES[Example]。
 
 === HTTP
 
 仅需全局配置 Git 代理，`https` 或 `socks5` 均可。
+将 `127.0.0.1:1080` 替换为可用的代理服务地址。
 
 [source,sh,subs="+macros"]
 ----
-git config --global http.proxy socks5://pass:[<var>PROXY</var>]
+git config --global http.proxy socks5://127.0.0.1:1080
 ----
 
 === SSH
 
 编辑 `~/.ssh/config` 文件，增加以下配置。`-X 5` 代表 `socks5` 代理协议。
-如果是使用其它 Git 托管服务，将 `github.com` 替换为其它服务域名即可。
+如果是使用其它 Git 托管服务，将 `github.com` 替换为对应服务域名。
 
 [source,subs="+macros"]
 ----
 Host github.com
-    ProxyCommand nc -X 5 -x pass:[<var>PROXY</var>] %h %p
+    ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
 ----
 
