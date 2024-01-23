@@ -14,12 +14,8 @@
           <article class="article">
               <div class="article-header component-text">
                 <div class="article-eyebow">
-                  <div class="article-topic">
-                    <a class="topic-link" href="#">{{ page.category }}</a>
-                  </div>
-                  <div class="article-date">
-                    {{ page.date | date: "%B %-d, %Y" }}
-                  </div>
+                  <div class="article-topic">{{ page.category }}</div>
+                  <div class="article-date">{{ page.date | date: "%B %-d, %Y" }}</div>
                 </div>
                 <div class="article-title">
                   <h1 class="h1">{{ page.title }}</h1>
