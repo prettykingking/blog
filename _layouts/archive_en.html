@@ -7,6 +7,12 @@
 {% include header_en.html %}
 </div>
 
+{%- comment -%}
+Archive group
+By year: "%Y", "%Y"
+By month: "%Y%m", "%B %Y"
+{% endcomment %}
+
 <div class="main main-archive">
   <main>
     <div class="archives">
@@ -15,13 +21,12 @@
         {%- assign last_date_group = "" -%}
         {%- for post in posts -%}
           {%- if post.lang == page.lang -%}
-            {%- assign post_date_group = post.date | date: "%Y%m" -%}
-
+            {%- assign post_date_group = post.date | date: "%Y" -%}
             {%- if post_date_group != last_date_group -%}
-            {%- assign last_date_group = post.date | date: "%Y%m" -%}
+            {%- assign last_date_group = post.date | date: "%Y" -%}
             <div class="row">
               <div class="col-12">
-                <h2 class="archive-group-title">{{ post.date | date: "%B %Y" }}</h2>
+                <h2 class="archive-group-title">{{ post.date | date: "%Y" }}</h2>
               </div>
             </div>
             {%- endif -%}

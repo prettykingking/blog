@@ -7,6 +7,12 @@
 {% include header_zh.html %}
 </div>
 
+{%- comment -%}
+Archive group
+By year: "%Y", "%Y"
+By month: "%Y%m", "月 %Y" | prepend: month_zh
+{% endcomment %}
+
 <div class="main main-archive">
   <main>
     <div class="archives">
@@ -15,12 +21,11 @@
         {%- assign last_date_group = "" -%}
         {%- for post in posts -%}
           {%- if post.lang == page.lang -%}
-            {%- assign post_date_group = post.date | date: "%Y%m" -%}
-
+            {%- assign post_date_group = post.date | date: "%Y" -%}
             {%- if post_date_group != last_date_group -%}
-            {%- assign last_date_group = post.date | date: "%Y%m" -%}
-            {%- assign month = post.date | date: "%-m" -%}
+            {%- assign last_date_group = post.date | date: "%Y" -%}
 
+            {%- assign month = post.date | date: "%-m" -%}
             {%- case month -%}
               {%- when "1" -%}
                 {%- assign month_zh = "一" -%}
@@ -51,7 +56,7 @@
               {%- endcase -%}
             <div class="row">
               <div class="col-12">
-                <h2 class="archive-group-title">{{ post.date | date: "月 %Y" | prepend: month_zh }}</h2>
+                <h2 class="archive-group-title">{{ post.date | date: "%Y" }}</h2>
               </div>
             </div>
             {%- endif -%}
