@@ -57,6 +57,8 @@ Then upload `_site` to your server.
 
 https://asciidoc.org[AsciiDoc] is a concise and comprehensive authoring format.
 http://asciidoctor.org[AsciiDoctor] is a fast implementation of it.
+https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc] plugin adds
+AsciiDoc support to Jekyll.
 
 === Gemfile
 
