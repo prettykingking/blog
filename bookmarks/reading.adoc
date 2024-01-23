@@ -2,7 +2,7 @@
 Jie Zheng <prettykingking@live.com>
 :page-lang: en
 :page-layout: page
-:page-description: Online or paper books I read or would like to read.
+:page-description: Online resources I read or would like to read.
 
 Read about someone else's life, it might change your own.
 

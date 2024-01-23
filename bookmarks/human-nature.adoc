@@ -1,0 +1,16 @@
+= Human nature
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: The Human-Nature relationship.
+
+Discover multiple ways of understanding and connecting with the world around you.
+
+== Environment protection
+
+* https://mymodernmet.com/sebastiao-salgado-forest[Couple spent 20 years planting]
+* https://www.princeton.edu/news/2017/08/22/orange-new-green-how-orange-peels-revived-costa-rican-forest[Orange is the new Green]
+* https://www.resilience.org/stories/2020-06-08/collapse-of-civilisation-is-the-most-likely-outcome-top-climate-scientists/[Collapse of Civilization]
+* https://www.nationalgeographic.com/science/article/plastic-produced-recycling-waste-ocean-trash-debris-environment[A whopping 91% of plastic]
+* https://phys.org/news/2020-03-accurate-climate-reveals-bleaker-outlook.html[More accurate climate change]
+
