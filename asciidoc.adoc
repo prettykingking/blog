@@ -132,8 +132,12 @@ To refer to a range of codes, use the following form:
 an HTTP `2xx` or `400` status code
 ====
 
+'''
+
 For example, the placeholder `PROJECT_ID` represents
 a project ID in sample code, commands, and example output.
+
+'''
 
 In the following example, `GROUP` is required,
 but `GLOBAL_FLAG` and `FILENAME` are optional:
