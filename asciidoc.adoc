@@ -348,7 +348,6 @@ List items can be marked complete using checklists.
 * [*] checked
 * [x] also checked
 * [ ] not checked
-* normal list item
 
 === Numbered list
 
