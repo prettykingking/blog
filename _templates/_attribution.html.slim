@@ -1,7 +1,7 @@
 - attribution = attr :attribution
 - citetitle = attr :citetitle
 - if attribution || citetitle
-  figcaption class=["quote-footer"]
+  p class=["quote-footer"]
     - if attribution
       |> #{attribution}
     - if citetitle

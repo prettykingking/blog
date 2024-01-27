@@ -13,12 +13,12 @@
     <div class="main-container">
           <article class="article">
               <div class="article-header component-text">
-                <div class="article-eyebow">
-                  <div class="article-topic">{{ page.category }}</div>
-                  <div class="article-date">{{ page.date | date: "%B %-d, %Y" }}</div>
-                </div>
                 <div class="article-title">
                   <h1 class="h1">{{ page.title }}</h1>
+                </div>
+                <div class="article-eyebow">
+                  <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
+                  <span class="topic">{{ page.category }}</span>
                 </div>
                 <div class="article-subhead">
                   {{ page.description }}

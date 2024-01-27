@@ -97,14 +97,14 @@ The `&` symbol at the end send it to the background.
 
 [source,sh,subs="macros+"]
 ----
-nohup [+++<var>CMD</var>+++] > nohup.out &
+nohup [CMD] > nohup.out &
 ----
 
 Unlike `nohup`, `disown` is used after you started a process.
 
 [source,sh,subs="macros+"]
 ----
-disown [+++<var>PID</var>+++]
+disown [PID]
 ----
 
 

@@ -7,9 +7,4 @@
   a id=target
   |[#{@target}]
 - else
-  - external = true
-  - if target.index("jiezheng.org") != nil
-    - external = false
-  - elsif target.start_with?("/")
-    - external = false
-  a id=id class=[("external" if external), role] href=target target=(attr :window) title=(attr :title) =text
+  a id=id class=role href=target target=(attr :window) title=(attr :title) =text
