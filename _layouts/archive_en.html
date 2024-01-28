@@ -34,8 +34,8 @@ By month: "%Y%m", "%B %Y"
             <div class="row">
               <div class="col-12">
                 <div href="{{ post.url }}" class="archive">
-                  <div class="archive-content archive-no-picture">
-                      <h4 class="archive-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                  <div class="archive-content">
+                    <h4 class="archive-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
                     <div class="archive-subtitle">
                       <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
                       <span class="topic">{{ post.category }}</span>
