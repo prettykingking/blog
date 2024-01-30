@@ -1,0 +1,17 @@
+= Personal finance
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: It's not how much money you make, It's how much money you keep.
+
+Learn to keep yourself financially secure.
+
+== Financial safety
+
+https://thetaoofwealth.wordpress.com/2013/02/17/harry-brownes-17-golden-rules-of-financial-safety/[Harry Brownes 17 golden rules of financial safety]
+
+
+== Mortgage
+
+What is the difference between a mortgage interest rate and an APR?[Mortgage interest rate and APR]
+

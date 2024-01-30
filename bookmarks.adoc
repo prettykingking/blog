@@ -31,6 +31,7 @@ Categories are not in specific order.
 
 * link:/bookmarks/reading[Reading list]
 * link:/bookmarks/blog[Blog]
+* link:/bookmarks/finance[Personal finance]
 * Mathematics
 * Windows
 * link:/bookmarks/human-nature[Human nature]
