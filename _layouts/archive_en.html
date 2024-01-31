@@ -15,8 +15,9 @@ By month: "%Y%m", "%B %Y"
 
 <div class="main main-archive">
   <main>
-    <div class="archives">
-      <div class="archive-group">
+    <div class="archive">
+        <div class="row">
+          <div class="col">
         {%- assign posts = site.posts -%}
         {%- assign last_date_group = "" -%}
         {%- for post in posts -%}
@@ -24,38 +25,25 @@ By month: "%Y%m", "%B %Y"
             {%- assign post_date_group = post.date | date: "%Y" -%}
             {%- if post_date_group != last_date_group -%}
             {%- assign last_date_group = post.date | date: "%Y" -%}
-            <div class="row">
-              <div class="col-12">
-                <h2 class="archive-group-title">{{ post.date | date: "%Y" }}</h2>
-              </div>
-            </div>
+            <h2 class="archive-date">{{ post.date | date: "%Y" }}</h2>
             {%- endif -%}
 
-            <div class="row">
-              <div class="col-12">
-                <div href="{{ post.url }}" class="archive">
-                  <div class="archive-content">
-                    <h4 class="archive-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                    <div class="archive-subtitle">
-                      <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-                      <span class="topic">{{ post.category }}</span>
-                    </div>
-                  </div>
+            <div class="archive-record">
+                <h4 class="archive-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <div class="archive-subtitle">
+                  <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                  <span class="topic">{{ post.category }}</span>
                 </div>
-              </div>
             </div>
           {%- endif -%}
         {%- endfor -%}
 
-        <div class="row">
-          <div class="col-12">
-            <ul class="pagination justify-content-center">
-              <li class="page-item"><span class="page-num">1</span></li>
-            </ul>
-          </div>
+            </div>
+            <!-- col -->
         </div>
-      </div>
+        <!-- row -->
     </div>
+    <!-- archive -->
   </main>
 </div>
 

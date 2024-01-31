@@ -1,12 +1,12 @@
 - unless sections.empty?
   - toclevels ||= (document.attr 'toclevels', 2).to_i
   - tlevel = toc_level sections.first
+  - if tlevel == 1
+    h6 class="toc-heading"
+      | Table of Contents
   ul class=[("toc" if tlevel == 1)]
-    - if tlevel == 1
-      li class=["toc-item toc-heading"]
-        span class="toc-title" Table of Contents
     - sections.each do |sec|
-      li class=["toc-item"]
-        a class=["toc-title"] href="##{sec.id}" =section_title sec
+      li
+        a href="##{sec.id}" =section_title sec
         - if (sec.level < toclevels) && (child_toc = converter.convert sec, 'outline')
           = child_toc

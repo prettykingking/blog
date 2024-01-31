@@ -18,9 +18,13 @@
                   <span class="date">{{ page.date | date: "%Y 年 %-m 月 %d 日" }}</span>
                   <span class="topic">{{ page.category }}</span>
                 </div>
+                {% if page.description %}
                 <div class="article-desc">
                   {{ page.description }}
                 </div>
+                {% endif %}
+
+                <div class="line"></div>
               </div>
 
               {{ content }}
