@@ -1,0 +1,13 @@
+= Emacs
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: The one true editor.
+
+Best editor for Lisp dialects.
+
+== Knights
+
+* https://protesilaos.com/emacs/
+* https://emacsredux.com/archive/
+
