@@ -1,3 +1,6 @@
 blockquote class=["quote"]
-  =content
+  - if content.start_with? "<"
+    =content
+  - else
+    p =content
   include _attribution.html
