@@ -13,18 +13,18 @@ Jie Zheng <prettykingking@live.com>
 
 == 三种协议
 
-Git 仓库托管服务，对于 `fetch` 和 `push` 通常会支持三种协议，分别为 `git://`, `ssh://`, 和
-`http://`。其中 `git` 和 `ssh` 是同一种协议，只是 scheme 不同，但在设置时会有所区别。
+Git 仓库托管服务，对于 Fetch 和 Push 通常会支持三种协议，分别为 GIT, SSH, 和
+HTTP。其中 Git 和 SSH 属于同一种协议，只是 scheme 不同，但在设置时会有所区别。
 
 == 代理设置
 
-下面分别介绍两种常用协议 `ssh` 和 `http` 的设置。
+下面分别介绍两种常用协议 SSH 和 HTTP 的设置。
 
-TIP: `git://` 协议代理设置较为复杂，可以参考 https://git-scm.com/docs/git-config#EXAMPLES[Example]。
+TIP: GIT 协议代理设置较为复杂，可以参考 https://git-scm.com/docs/git-config#EXAMPLES[这里]。
 
 === HTTP
 
-仅需全局配置 Git 代理，`https` 或 `socks5` 均可。
+仅需全局配置 Git 代理，HTTPS 或 SOCKS5 均可。
 将 `127.0.0.1:1080` 替换为可用的代理服务地址。
 
 [source,sh,subs="+macros"]
@@ -34,7 +34,7 @@ git config --global http.proxy socks5://127.0.0.1:1080
 
 === SSH
 
-编辑 `~/.ssh/config` 文件，增加以下配置。`-X 5` 代表 `socks5` 代理协议。
+编辑 `~/.ssh/config` 文件，增加以下配置。`-X 5` 代表 SOCKS5 代理协议。
 如果是使用其它 Git 托管服务，将 `github.com` 替换为对应服务域名。
 
 [source,subs="+macros"]
