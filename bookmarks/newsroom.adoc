@@ -1,0 +1,12 @@
+= News room
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: Industry news.
+
+Usually read interesting news.
+
+== Business
+
+https://sfstandard.com/2022/09/16/meet-sfs-30-year-old-tech-boss-behind-20-billion-deal-thats-made-him-rich-overnight/[Meet the 30-Year-Old SF Tech Boss Whose $20B Deal Made Him Super Rich Overnight]
+

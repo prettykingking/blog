@@ -28,6 +28,7 @@ Categories are not in specific order.
 
 == Miscellaneous
 
+* link:/bookmarks/newsroom[News room]
 * link:/bookmarks/reading[Reading list]
 * link:/bookmarks/blog[Blog]
 * link:/bookmarks/finance[Personal finance]
