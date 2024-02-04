@@ -82,31 +82,134 @@ Print RED in shell
 printf "\033[0;91mRED\033[0m\n"
 ----
 
+
+=== Read file line by line
+
+IFS stands for internal field separator or input field separator.
+The default value is a space, a tab, a newline feed.
+
+[source,sh]
+----
+while IFS="" read -r line; do
+    echo $line
+done < README.txt
+----
+
+
+=== Get length of string
+
+----
+echo ${#var}
+----
+
+
 === Generate random string
 
 Random string with 12 length
 
-[source,sh]
 ----
 dd if=/dev/urandom count=1 2> /dev/null | base64 -i - | cut -c -12 -
 ----
+
+
+=== Here doc for arbitrary text
+
+----
+cat <<EOF | tee file.txt
+line 1
+line 2
+EOF
+----
+
 
 === Keep runing after logging off
 
 The `&` symbol at the end send it to the background.
 
-[source,sh,subs="macros+"]
 ----
 nohup [CMD] > nohup.out &
 ----
 
 Unlike `nohup`, `disown` is used after you started a process.
 
-[source,sh,subs="macros+"]
 ----
 disown [PID]
 ----
 
+=== Parse CLI arguments
+
+The following snippet implements CLI arguments parsing. Options usually start
+with a dash, but arguments is position based. It should be useful for most
+scenarios.
+
+[source,sh]
+----
+# usage: script.sh -o1 abc xyz
+opts_count=0
+args_count=0
+args=()
+dry_run=0
+
+# define options here
+opt1=''
+
+while :; do
+  case "${1-}" in
+  -h | --help)
+    echo 'help message'
+    exit 0
+    ;;
+
+  # parse options
+  --dry-run)
+    dry_run=1
+    ;;
+
+  -o1 | --opt1)
+    opt1="${2-}"
+
+    (( opts_count += 1 ))
+    shift
+    ;;
+
+  -?*)
+    echo "unrecognized option"
+    exit 0
+    ;;
+
+  *)
+    args+=("${1-}")
+
+    if [[ -z "${1-}" ]]; then
+      break
+    fi
+    ;;
+  esac
+
+  if [[ -n "${1-}" ]]; then
+    shift
+  fi
+done
+
+# default value for arguments
+arg1=''
+
+# parse args
+for arg in "${args[@]}"; do
+  if [[ -n "$arg" ]]; then
+    (( args_count += 1 ))
+
+    # define positional arguments here
+    if (( args_count == 1 )); then
+      arg1="$arg"
+    fi
+  fi
+done
+
+if (( opts_count == 0 && args_count == 0 )); then
+  echo "no options or aguments"
+fi
+----
 
 == FAQ
 

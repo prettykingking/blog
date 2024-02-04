@@ -11,5 +11,95 @@ often used in resource-constrained environments.
 
 == Scripting
 
-Check https://www.grymoire.com/Unix/Sh.html[Cheatsheet] for syntax.
+Check https://www.grymoire.com/Unix/Sh.html[Cheatsheet] for detailed syntax.
+http://www.etalabs.net/sh_tricks.html.
+
+=== Array interation
+
+Array is not part of the POSIX shell specification, this is a hack.
+
+----
+range="a b c 1 2 3"
+for e in $range; do
+    echo $e
+done
+----
+
+
+=== Parse CLI arguments
+
+The following snippet implements CLI arguments parsing. Options usually start
+with a dash, but arguments is position based. It should be useful for most
+scenarios. Adjust it against your own need.
+
+[source,sh]
+----
+# usage: script.sh -o1 abc xyz
+# default values of options
+opts_count=0
+args_count=0
+args=''
+dry_run=0
+
+# define options here
+opt1=''
+
+while :; do
+  case "${1-}" in
+  -h | --help)
+    echo "no options or arguments"
+    exit 0
+    ;;
+
+  # parse options
+  --dry-run)
+    dry_run=1
+    ;;
+  -o1 | --opt1)
+    opt1="${2-}"
+
+    opts_count=$((opts_count + 1))
+    shift
+    ;;
+
+  -?*)
+    echo "unrecognized option"
+    exit 0
+    ;;
+
+  *)
+    if [ -z "$args" ]; then
+      args="${1-}"
+    else
+      args="${args} ${1-}"
+    fi
+
+    if [ -z "${1-}" ]; then
+      break
+    fi
+    ;;
+  esac
+
+  if [ -n "${1-}" ]; then
+    shift
+  fi
+done
+
+# init arguments
+arg1=''
+
+# parse args
+for arg in $args; do
+  args_count=$((args_count + 1))
+
+  # define positional arguments here
+  if [ "$args_count" -eq 1 ]; then
+    arg1="$arg"
+  fi
+done
+
+if [ "$opts_count" -eq 0 ] && [ "$args_count" -eq 0 ]; then
+  echo "no options or arguments"
+fi
+----
 
