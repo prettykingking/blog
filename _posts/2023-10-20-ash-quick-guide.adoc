@@ -32,7 +32,7 @@ The following snippet implements CLI arguments parsing. Options usually start
 with a dash, but arguments is position based. It should be useful for most
 scenarios. Adjust it against your own need.
 
-[source,sh]
+[%linenums,sh]
 ----
 # usage: script.sh -o1 abc xyz
 # default values of options

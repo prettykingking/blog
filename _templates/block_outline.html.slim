@@ -4,7 +4,7 @@
   - if tlevel == 1
     h6 class="toc-heading"
       | Table of Contents
-  ul class=[("toc" if tlevel == 1)]
+  ul class=[("toc-list" if tlevel == 1)]
     - sections.each do |sec|
       li
         a href="##{sec.id}" =section_title sec
