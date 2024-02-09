@@ -11,8 +11,7 @@ often used in resource-constrained environments.
 
 == Scripting
 
-Check https://www.grymoire.com/Unix/Sh.html[Cheatsheet] for detailed syntax.
-http://www.etalabs.net/sh_tricks.html.
+Check https://www.grymoire.com/Unix/Sh.html[tutorial] for detailed syntax.
 
 === Array interation
 
