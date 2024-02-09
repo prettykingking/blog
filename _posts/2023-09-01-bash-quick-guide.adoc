@@ -96,13 +96,6 @@ done < README.txt
 ----
 
 
-=== Get length of string
-
-----
-echo ${#var}
-----
-
-
 === Generate random string
 
 Random string with 12 length
