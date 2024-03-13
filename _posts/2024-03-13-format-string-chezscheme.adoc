@@ -1,0 +1,20 @@
+= Format string in ChezScheme
+Jie Zheng <prettykingking@live.com>
+:revdate: March 13, 2024
+:page-lang: en
+:page-layout: post_en
+:page-category: ChezScheme
+:page-description: Formmated output.
+
+String formatting is used on everyday programming, and it is essential in every
+programming language. ChezScheme's implementation of format supports all of the
+Common Lisp format directives except for those specific to Common Lisp.
+
+Most useful directives described below. If there is no directive you expected,
+please consult https://www.lispworks.com/documentation/HyperSpec/Body/22_c.htm[Common Lisp Hyperspec]
+for complete documentation.
+
+== Applied procedures
+
+== Format directives
+
