@@ -96,7 +96,7 @@ A tilde may be inserted into the output using `~~`, and a newline may be inserte
 with `~%` (or embeded in the string with `\n`).
 
 Case conversion can be performed by bracketing a portion of the format string
-with the `~(` and `~) directives, and `(` can be preceded by an at sign `@` modifier
+with the `~(` and `~)` directives, and `(` can be preceded by an at sign `@` modifier
 or a colon sign `:` modifier. If a modifier is present, only the first letter
 is converted; for the entire portion, use two modifiers.
 
