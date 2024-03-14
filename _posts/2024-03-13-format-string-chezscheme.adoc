@@ -7,8 +7,8 @@ Jie Zheng <prettykingking@live.com>
 :page-description: Formmated output.
 
 String formatting is used on everyday programming, and it is essential in every
-programming language. ChezScheme's implementation of format supports all of the
-Common Lisp format directives except for those specific to Common Lisp.
+programming language. ChezScheme's implementation of `format` supports all of the
+Common Lisp format directives except for those specific to Common Lisp pretty printer.
 
 Most useful directives described below. If there is no directive you expected,
 please consult https://www.lispworks.com/documentation/HyperSpec/Body/22_c.htm[Common Lisp Hyperspec]
@@ -16,5 +16,98 @@ for complete documentation.
 
 == Applied procedures
 
+There are three built-in procedures to be applied. The following is their simple syntax.
+
+----
+(format "I miss you, ~a." "Mom") => "I miss you, Mom."
+(printf "I miss you, ~a." "Dad") => I miss you, Dad.
+(fprintf (current-output-port) "I miss you, ~a." "Jie") => I miss you, Jie.
+----
+
 == Format directives
+
+The `~s` directive is replaced by the printed representation of the nex object,
+which may be any object.
+The general form of `~s` directive is `~mincol,colinc,minpad,padchars`,
+and the `s` can be preceded by an at sign `@` modifier. These additional directives
+are used to control in the output.
+
+* `mincol` characters wide; defaults to 0.
+* `minpad` copies of `padchar` at least; defaults to 0.
+* `colinc` times of `padchar`; defaults to 1.
+* `padchar` is prefixed by a single quote mark; defaults to space.
+
+The `~a` directive is similar, but prints the object as with `display` procedure.
+
+----
+(format "~a" 'abc) => "abc"
+(format "~10a" 'abc) => "abc       "
+(format "~10,,,'*a" 'abc) => "abc*******"
+(format "~10,,,'*@a" 'abc) => "*******abc"
+----
+
+=== Real numbers
+
+Real numbers may be printed in floating-point notation with `~f`. It's general
+general form is actually `~w,d,k,overflowchar,padcharf`, and the `~f` can be
+preceded by an at sign `@` modifier.
+
+* `w` overall width of the output.
+* `d` number of digits to the right of decimal point.
+* `k` scale by latexmath:[10^k]; defaults to 0. If an `@` modifier is present,
+a plus sign is printed before the number for nonnegative inputs; otherwise,
+a sign is printed only if the number is negative.
+* `overflowchar` fill entire `w` field with copies if `overflowchar` is specified and
+the number can not be printed in `w` characters.
+* `padchar` is the pad character if padding is needed; defaults to space.
+Padding is always inserted on the left.
+
+----
+(format "~f" 3.14159) => "3.14159"
+(format "~,3f" 3.14159) => "3.142"
+(format "~10f" 3.14159) => "   3.14159"
+(format "~3,2,,'*,f" 3.14159) => "***"
+(format "~3,1,,'*,f" 3.14159) => "3.1"
+(format "~5,1,,'*,'#f" 3.14159) => "##3.1"
+(format "~5,1,,'*,f" -3.14159) => " -3.1"
+(format "~5,1,,'*,@f" 3.14159) => " +3.1"
+----
+
+Real numbers may also be printed with `~e` for scientific notation or with `~g`,
+which uses ethier floating-point or scientific notation based on the size of the input.
+
+----
+(format "~e" 314159) => "3.14159e+5"
+(format "~g" 3.14159) => "3.14159"
+(format "~g" 1e23) => "1.0e+23"
+----
+
+A real number may also be printed with `~$`, which uses monetary notation defaulting
+to two digits to the right of the decimal point.
+
+----
+(format "$~$" (* 1.23 12.3)) => "$15.13"
+(format "~$USD" 1/3) => "0.33USD"
+----
+
+=== Special characters
+
+A tilde may be inserted into the output using `~~`, and a newline may be inserted
+with `~%` (or embeded in the string with `\n`).
+
+Case conversion can be performed by bracketing a portion of the format string
+with the `~(` and `~) directives, and `(` can be preceded by an at sign `@` modifier
+or a colon sign `:` modifier. If a modifier is present, only the first letter
+is converted; for the entire portion, use two modifiers.
+
+----
+(format "~(~a~)" "abc") => "abc"
+(format "~(~a~)" "ABC") => "abc"
+(format "~@(~a~)" "abc") => "Abc"
+(format "~:(~a~)" "abc") => "Abc"
+(format "~@:(~a~)" "abc") => "ABC"
+----
+
+Again, for other directives, please consult a Common Lisp reference for complete
+documentation.
 
