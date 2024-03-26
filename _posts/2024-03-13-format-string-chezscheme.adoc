@@ -26,7 +26,7 @@ There are three built-in procedures to be applied. The following is their simple
 
 == Format directives
 
-The `~s` directive is replaced by the printed representation of the nex object,
+The `~s` directive is replaced by the printed representation of the next object,
 which may be any object.
 The general form of `~s` directive is `~mincol,colinc,minpad,padchars`,
 and the `s` can be preceded by an at sign `@` modifier. These additional directives

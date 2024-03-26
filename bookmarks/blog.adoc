@@ -35,16 +35,12 @@ use RSS reader. I only read them as i got time.
 * https://www.diguage.com/archives/[Diguage]
 
 
-== System World
+== System and network
 
 * https://www.reddit.com/r/linux/comments/hzyu8j/im_jason_a_donenfeld_security_researcher_kernel/[Jason A. Donenfeld] - Kernel Developer
+* https://packetlife.net/about/[Jeremy Stretch] - Network engineer
 * https://blog.gslin.org[Gea-Suan Lin] - DevOps
 * https://strikefreedom.top[Pan Jianfeng] - The author of gnet and ants
-
-
-== Cryptographer
-
-https://www.aumasson.jp[JP Aumasson] - Cryptographer
 
 
 == Web
@@ -57,6 +53,8 @@ https://www.aumasson.jp[JP Aumasson] - Cryptographer
 
 == Miscellaneous
 
+* https://www.aumasson.jp[JP Aumasson] - Cryptographer
+* https://jvns.ca[Julia Evans] - Wizard Zines
 * http://www.yinwang.org[Yin Wang] - PL expert
 * https://cjting.me[CJ Ting]
 * https://www.craftz.dog/posts[Takuya Matsuyama] - Ink Drop Founder
