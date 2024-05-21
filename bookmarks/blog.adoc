@@ -53,6 +53,8 @@ use RSS reader. I only read them as i got time.
 
 == Miscellaneous
 
+* https://paulgraham.com/[Paul Graham]
+* https://program-think.blogspot.com[Program Think]
 * https://www.aumasson.jp[JP Aumasson] - Cryptographer
 * https://jvns.ca[Julia Evans] - Wizard Zines
 * http://www.yinwang.org[Yin Wang] - PL expert

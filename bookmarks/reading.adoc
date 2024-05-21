@@ -18,6 +18,7 @@ Read about someone else's life, it might change your own.
 == Computer sciense
 
 * https://people.freebsd.org/~lstewart/articles/cpumemory.pdf[CPU Memory]
+* https://lmax-exchange.github.io/disruptor/disruptor.html[Disruptor - High performance computing]
 * https://floating-point-gui.de[Floating Point Number]
 * https://unicodebook.readthedocs.io/index.html[Programming with Unicode]
 * https://herbcaudill.com/words/20190219-rewrite-refactor-reinvent[Rewrite, refactor or reinvent?]
