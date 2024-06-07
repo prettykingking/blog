@@ -6,3 +6,8 @@ Jie Zheng <prettykingking@live.com>
 
 Software related tools.
 
+== Website testing
+
+* https://pagespeed.web.dev[PageSpeed insights]
+* https://lighthouse-metrics.com[Global website metrics]
+
