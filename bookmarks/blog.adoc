@@ -20,7 +20,6 @@ https://caoziang.com[曹子昂]
 
 == C/C++
 
-* https://research.swtch.com[Russ Cox]
 * https://dunkels.com/adam/[Adam Dunkels] - IoT consultant
 * https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
 
@@ -39,6 +38,10 @@ https://caoziang.com[曹子昂]
 * https://leon-wtf.github.io/[Mostly Java]
 * https://www.diguage.com/archives/[Diguage]
 
+== Golang
+
+* https://dave.cheney.net[David] - Golang member
+* https://research.swtch.com[Russ Cox]
 
 == System and network
 
