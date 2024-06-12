@@ -4,11 +4,16 @@ Jie Zheng <prettykingking@live.com>
 :page-layout: page
 :page-description: Industry news.
 
-Usually read interesting news.
+Usually read interesting articles.
 
-== Business
+== News site
 
+* https://www.fastcompany.com/[FastCompany]
 * https://techcrunch.com[Tech Crunch]
-* https://www.fastcompany.com/90693444/jony-ives-first-major-design-since-leaving-apple-isnt-what-youd-expect[Jony Ive's first major design since leaving Apple]
+
+== Understand the business
+
+* https://growthinreverse.com/tldr/[The Multi-Million Dollar Newsletter Run by 1 Guy]
 * https://sfstandard.com/2022/09/16/meet-sfs-30-year-old-tech-boss-behind-20-billion-deal-thats-made-him-rich-overnight/[Meet the 30-Year-Old SF Tech Boss Whose $20B Deal Made Him Super Rich Overnight]
+* https://www.fastcompany.com/90693444/jony-ives-first-major-design-since-leaving-apple-isnt-what-youd-expect[Jony Ive's first major design since leaving Apple]
 

@@ -20,6 +20,7 @@ Categories are not in specific order.
 * link:/bookmarks/lisp[Lisp]
 * link:/bookmarks/java[Java / Kotlin]
 * link:/bookmarks/swift[Swift / Objective-C]
+* link:/bookmarks/golang[Golang]
 * link:/bookmarks/python[Python]
 * link:/bookmarks/javascript[JavaScript]
 * Programming

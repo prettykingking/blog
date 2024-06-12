@@ -1,0 +1,35 @@
+= Golang
+Jie Zheng <prettykingking@live.com>
+:page-lang: en
+:page-layout: page
+:page-description: The Go programming language.
+
+The Golang programming language.
+
+
+== Effective Golang
+
+* https://go.dev/doc/effective_go[Official guide]
+* https://go.dev/blog/package-names[Package name convention]
+* https://go.dev/blog/maps[Go maps in action]
+* https://go.dev/blog/laws-of-reflection[The laws of reflection]
+* https://go.dev/ref/mod[Go module reference]
+* https://go.dev/doc/modules/managing-dependencies[Managing dependencies]
+* https://golang.org/doc/modules/developing[Developing module]
+* https://go101.org/article/101.html[Go 101]
+* https://yourbasic.org/golang/[Go go-to guide]
+* https://github.com/golang/go/wiki/SliceTricks[Slice tricks]
+* https://stackoverflow.com/questions/53737435/how-to-prepend-int-to-slice[Prepend to slice]
+
+== Performance tuning
+
+* https://morsmachine.dk/netpoller[The Go netpoller]
+* https://bravenewgeek.com/so-you-wanna-go-fast/[Concurrency optimization in Golang]
+
+== Useful libraries
+
+=== Networking
+
+* https://github.com/tidwall/evio[evio] - Event loop
+* https://github.com/panjf2000/gnet[gnet] - Non-blocking, event-driven
+

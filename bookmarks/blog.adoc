@@ -20,6 +20,7 @@ https://caoziang.com[曹子昂]
 
 == C/C++
 
+* https://research.swtch.com[Russ Cox]
 * https://dunkels.com/adam/[Adam Dunkels] - IoT consultant
 * https://www.chiark.greenend.org.uk/~sgtatham/[Simon Tatham] - PuTTY's Author
 
