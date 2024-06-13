@@ -10,3 +10,9 @@ TCP/IP
 
 http://moo.nac.uci.edu/~hjm/HOWTO_move_data.html[How to transfer large amounts of data over network]
 
+
+== Non-blocking
+
+* https://copyconstruct.medium.com/nonblocking-i-o-99948ad7c957[Non-blocking IO]
+* https://copyconstruct.medium.com/the-method-to-epolls-madness-d9d2d6378642[epoll's method illustration]
+

@@ -13,6 +13,7 @@ The Golang programming language.
 * https://go.dev/blog/package-names[Package name convention]
 * https://go.dev/blog/maps[Go maps in action]
 * https://go.dev/blog/laws-of-reflection[The laws of reflection]
+* https://go.dev/blog/context[Go context]
 * https://go.dev/ref/mod[Go module reference]
 * https://go.dev/doc/modules/managing-dependencies[Managing dependencies]
 * https://golang.org/doc/modules/developing[Developing module]
@@ -23,8 +24,17 @@ The Golang programming language.
 
 == Performance tuning
 
+* https://golang.design/research/zero-alloc-call-sched/[Scheduling function calls with zero allocation]
+* https://dzone.com/articles/memory-pooling-in-go-where-why-and-how[Memory pooling in Go]
+* https://segment.com/blog/allocation-efficiency-in-high-performance-go-services/[Allocation efficiency in Go]
+* https://chris124567.github.io/2021-06-21-go-performance/[Reducing allocations in Go]
+* https://medium.com/eureka-engineering/understanding-allocations-in-go-stack-heap-memory-9a2631b5035d[Understanding allocations in Go]
 * https://morsmachine.dk/netpoller[The Go netpoller]
+* https://morsmachine.dk/go-scheduler[The Go scheduler]
+* https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html[Scheduling in Go]
 * https://bravenewgeek.com/so-you-wanna-go-fast/[Concurrency optimization in Golang]
+* https://www.freecodecamp.org/news/million-websockets-and-go-cc58418460bb/[1M websockets connections]
+* https://speakerdeck.com/eranyanay/going-infinite-handling-1m-websockets-connections-in-go[1M websockets connections 2]
 
 == Useful libraries
 
