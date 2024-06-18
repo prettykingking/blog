@@ -9,7 +9,9 @@ Usually read interesting articles.
 == News site
 
 * https://www.fastcompany.com/[FastCompany]
+* https://www.businessinsider.com/[Business Insider]
 * https://techcrunch.com[Tech Crunch]
+* https://digg.com[digg]
 
 == Understand the business
 

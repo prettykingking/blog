@@ -6,6 +6,37 @@ Jie Zheng <prettykingking@live.com>
 
 Java programming language.
 
+== Effective Java
+
+* https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/geninfo/diagnos/garbage_collect.html[Understanding memory management]
+* https://www.ibm.com/support/pages/recommended-maximum-heap-sizes-32-and-64-bit-websphere-java-instances[Recommended JVM heap size]
+* https://medium.com/swlh/how-to-easily-handle-emoji-unicode-in-java-ff905f264f98[How to handle Emoji in Java]
+* https://www.baeldung.com/thread-pool-java-and-guava[Thread pool in Java]
+* https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java[CMU SEI CERT Coding Standard]
+* https://docs.oracle.com/javase/tutorial/index.html[Oracle tutorial]
+* https://docs.oracle.com/javase/tutorial/essential/io/index.html[Basic IO]
+* https://bell-sw.com/blog/[Bell Soft Blog]
+* https://www.baeldung.com/category/weekly-review/[Baeldung Weekly]
+
+=== Java GC
+
+* https://mechanical-sympathy.blogspot.com/2013/07/java-garbage-collection-distilled.html[Java GC Distilled]
+* https://bell-sw.com/announcements/2022/09/07/garbage-collection-in-java[Guide to Java GC]
+* https://www.baeldung.com/jvm-garbage-collectors[Java Common GC]
+* https://developers.redhat.com/articles/2021/11/02/how-choose-best-java-garbage-collector[How to choose Java GC]
+* https://kstefanj.github.io/2021/11/24/gc-progress-8-17.html[GC Progress from 8 to 17]
+* https://rodrigo-bruno.github.io/mentoring/77998-Carlos-Goncalves_dissertacao.pdf[A Performance Comparison of Modern Garbage Collectors for Big Data Environments]
+* https://www.uber.com/en-JP/blog/jvm-tuning-garbage-collection/[JVM Tuning GC]
+* https://www.infoq.com/articles/azul_gc_in_detail/[The Azul Garbage Collector]
+* https://www.overops.com/blog/garbage-collectors-serial-vs-parallel-vs-cms-vs-the-g1-and-whats-new-in-java-8/[GC in Java 8]
+* https://www.infoq.com/articles/G1-One-Garbage-Collector-To-Rule-Them-All/[G1 in-depth review]
+
+=== Java Persistence
+
+* https://vladmihalcea.com/date-timestamp-jpa-hibernate/[Map Date and Timestamp with JPA]
+* https://www.jpa-buddy.com/blog/lombok-and-jpa-what-may-go-wrong/[Jpa Buddy]
+* https://jpa-buddy.com/blog/the-ultimate-guide-on-composite-ids-in-jpa-entities/[Composite ID in JPA]
+
 
 == JDK
 
@@ -27,23 +58,10 @@ Java programming language.
 * https://www.java.com/en/download/help/mac_uninstall_java.html[Uninstallation on Mac]
 
 
-== Tutorials
+== Libraries
 
-* https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java[CMU SEI CERT Coding Standard]
-* https://docs.oracle.com/javase/tutorial/index.html[Oracle tutorial]
-* https://docs.oracle.com/javase/tutorial/essential/io/index.html[Basic IO]
-* https://bell-sw.com/blog/[Bell Soft Blog]
-* https://www.baeldung.com/category/weekly-review/[Baeldung Weekly]
-
-
-== Java Persistence
-
-* https://vladmihalcea.com/date-timestamp-jpa-hibernate/[Map Date and Timestamp with JPA]
-* https://www.jpa-buddy.com/blog/lombok-and-jpa-what-may-go-wrong/[Jpa Buddy]
-* https://jpa-buddy.com/blog/the-ultimate-guide-on-composite-ids-in-jpa-entities/[Composite ID in JPA]
-
-
-== Frameworks
+* https://fastutil.di.unimi.it[Fast Util] - Java Collection Extension
+* https://www.baeldung.com/jackson[Jackson]
 
 === CLI
 
@@ -63,30 +81,3 @@ Java programming language.
 * https://struts.apache.org/[Struts]
 * https://www.playframework.com/[Play]
 
-
-== Libraries
-
-https://fastutil.di.unimi.it[Fast Util] - Java Collection Extension
-
-
-== Wiki
-
-* https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/geninfo/diagnos/garbage_collect.html[Understanding memory management]
-* https://www.ibm.com/support/pages/recommended-maximum-heap-sizes-32-and-64-bit-websphere-java-instances[Recommended JVM heap size]
-* https://medium.com/swlh/how-to-easily-handle-emoji-unicode-in-java-ff905f264f98[How to handle Emoji in Java]
-* https://www.baeldung.com/thread-pool-java-and-guava[Thread pool in Java]
-* https://www.baeldung.com/jackson[Jackson]
-
-
-== Java GC
-
-* https://mechanical-sympathy.blogspot.com/2013/07/java-garbage-collection-distilled.html[Java GC Distilled]
-* https://bell-sw.com/announcements/2022/09/07/garbage-collection-in-java[Guide to Java GC]
-* https://www.baeldung.com/jvm-garbage-collectors[Java Common GC]
-* https://developers.redhat.com/articles/2021/11/02/how-choose-best-java-garbage-collector[How to choose Java GC]
-* https://kstefanj.github.io/2021/11/24/gc-progress-8-17.html[GC Progress from 8 to 17]
-* https://rodrigo-bruno.github.io/mentoring/77998-Carlos-Goncalves_dissertacao.pdf[A Performance Comparison of Modern Garbage Collectors for Big Data Environments]
-* https://www.uber.com/en-JP/blog/jvm-tuning-garbage-collection/[JVM Tuning GC]
-* https://www.infoq.com/articles/azul_gc_in_detail/[The Azul Garbage Collector]
-* https://www.overops.com/blog/garbage-collectors-serial-vs-parallel-vs-cms-vs-the-g1-and-whats-new-in-java-8/[GC in Java 8]
-* https://www.infoq.com/articles/G1-One-Garbage-Collector-To-Rule-Them-All/[G1 in-depth review]
