@@ -4,6 +4,7 @@ Jie Zheng <prettykingking@live.com>
 :page-lang: en
 :page-layout: post_en
 :page-category: Shell
+:page-tags: [shell, ash]
 :page-description: Quickly find recipes to resolve shell tasks.
 
 Almquist shell written as a BSD-licensed replacement for the Bourne Shell;

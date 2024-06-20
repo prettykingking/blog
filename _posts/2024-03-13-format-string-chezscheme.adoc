@@ -4,6 +4,7 @@ Jie Zheng <prettykingking@live.com>
 :page-lang: en
 :page-layout: post_en
 :page-category: ChezScheme
+:page-tags: [chezscheme]
 :page-description: Formmated output.
 
 String formatting is used on everyday programming, and it is essential in every

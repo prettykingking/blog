@@ -4,7 +4,8 @@ Jie Zheng <prettykingking@live.com>
 :sectnums:
 :page-lang: zh
 :page-layout: post_zh
-:page-category: 金融
+:page-category: 金融财务
+:page-tags: [金融, 贷款]
 :page-description: 计算与衡量贷款的实际年利率
 
 近期计划购车，对于意向车型有能力全款购车，但如果支付贷款费率，所获得时间收益和风险收益对自己合理划算，

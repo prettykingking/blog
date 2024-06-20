@@ -4,6 +4,7 @@ Jie Zheng <prettykingking@live.com>
 :page-lang: en
 :page-layout: post_en
 :page-category: Shell
+:page-tags: [shell, bash]
 :page-description: Quickly find recipes to resolve shell tasks.
 
 BASH is an acronym for **B**ourne **A**gain Shell.

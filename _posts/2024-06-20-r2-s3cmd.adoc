@@ -1,0 +1,13 @@
+= Store data on CloudFlare R2 via s3cmd
+Jie Zheng <prettykingking@live.com>
+:revdate: June 20, 2024
+:page-lang: en
+:page-layout: post_en
+:page-category: Cloud Storage
+:page-tags: [r2, s3cmd]
+:page-description: Upload, retrieve and query data on CloadFlare R2.
+
+R2 is a cloud storage service with zero egress charges by CloudFlare.
+You can use it for multiple scenarios, from small data to big data.
+Its API is S3 compatible. Any S3 client can operate against it.
+Here I introduce a CLI tool `s3cmd`.

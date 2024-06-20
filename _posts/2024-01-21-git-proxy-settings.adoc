@@ -4,6 +4,7 @@ Jie Zheng <prettykingking@live.com>
 :page-lang: zh
 :page-layout: post_zh
 :page-category: Git
+:page-tags: [git, proxy]
 :page-description: 多协议 Git 代理
 
 开源社区 Github 在国内连接非常不稳定，因为某种网络限制，超时导致无法连接的情况时常发生。

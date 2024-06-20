@@ -3,7 +3,8 @@ Jie Zheng <prettykingking@live.com>
 :revdate: September 12, 2023
 :page-lang: zh
 :page-layout: post_zh
-:page-category: 记人
+:page-category: 散文随想
+:page-tags: [记人]
 :page-description: 谨以此文，悼念我的奶奶。
 
 前天夜里，我的奶奶与世长辞。难过的是，我没能见上最后一面。
