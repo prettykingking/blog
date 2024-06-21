@@ -10,4 +10,39 @@ Jie Zheng <prettykingking@live.com>
 R2 is a cloud storage service with zero egress charges by CloudFlare.
 You can use it for multiple scenarios, from small data to big data.
 Its API is S3 compatible. Any S3 client can operate against it.
-Here I introduce a CLI tool `s3cmd`.
+
+Here I introduce a CLI tool https://s3tools.org/s3cmd[s3cmd], that is written in Python.
+
+== Configuration
+
+Invoke interactive configuration tool to generate a configuration file in home directory.
+
+----
+$ s3cmd --configure
+----
+
+Edit the generated file `~/.s3cfg`, replace the following option with your credentials.
+On the CloudFlare R2 console you can create access key and secret key,
+account ID can also be found there.
+As R2 does not support DNS-style bucket, you can leave `host_bucket` empty.
+
+----
+[default]
+access_key = {Access Key}
+...
+host_base = {Account ID}.r2.cloudflarestorage.com
+host_bucket =
+...
+secret_key = {Secret Key}
+----
+
+== Usage
+
+Try to put file into bucket on R2.
+
+----
+$ s3cmd put {file} s3://{bucket}/{prefix/}
+----
+
+Refer to the https://s3tools.org/usage[s3cmd] site for more commands.
+
