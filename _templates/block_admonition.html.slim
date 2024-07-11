@@ -1,7 +1,5 @@
 aside id=id class=[(attr :name), role]
-  h6 class="heading"
-    =caption
-  div class="body"
+  div class="prompt-content"
     - if content.start_with? "<"
       =content
     - else

@@ -1,10 +1,11 @@
 dl
   - items.each do |terms, dd|
-    - [*terms].each do |dt|
-      dt =dt.text
-    - unless dd.nil?
-      dd
-        - if dd.text?
-          p =dd.text
-        - if dd.blocks?
-          =dd.content
+    div.deflist
+      - [*terms].each do |dt|
+        dt =dt.text
+      - unless dd.nil?
+        dd
+          - if dd.text?
+            p =dd.text
+          - if dd.blocks?
+            =dd.content

@@ -2,12 +2,20 @@
 :page-description: Zheng Jie
 :page-layout: home
 
-You could contact me at #prettykingking@live.com#.
+Over the past decade developing Web applications while working in startup companies
+through to medium-size institutions. Most of them are data-intensive applications.
+In computer science, I am interested in algorithms and data structures.
+Believe in efficient software design.
 
-I occasionally write posts about various topics in link:/archive/en[English]
+[quote, Bjarne Stroustrup]
+Efficiency is not just running fast or running bigger programs,
+it’s also running using less resources.
+
+I occasionally write posts in link:/archive/en[English]
 or link:/archive/zh[Chinese], mostly technical.
 
 I am https://github.com/prettykingking[prettykingking] on Github.
+You could contact me at *prettykingking@live.com*.
 
 
 == Projects
@@ -24,3 +32,4 @@ Using the browser's Find +++<i class="bi bi-search"></i>+++
 can quickly jump to links. Look up link:/bookmarks[Bookmarks] only if you are
 interested.
 
+'''

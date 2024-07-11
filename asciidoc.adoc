@@ -127,7 +127,7 @@ an `HTTP 400 Bad Request` status code
 
 To refer to a range of codes, use the following form:
 
-.example
+.Procedure title
 ====
 an HTTP `2xx` or `400` status code
 ====
@@ -264,8 +264,6 @@ It has *strong* significance to me.
 I _cannot_ stress this enough.
 
 That *_really_* has to go.
-
-##Mark##up refers to text that contains formatting ##mark##s.
 
 Type `OK` to accept.
 
