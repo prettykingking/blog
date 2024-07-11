@@ -1,3 +1,4 @@
 .procedure
-  h3.procedure-heading.h3 =title
+  - if title?
+    h3.procedure-heading.h3 =title
   =content
