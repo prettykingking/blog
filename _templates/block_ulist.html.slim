@@ -1,17 +1,6 @@
-- if (checklist = 'checklist' if option? 'checklist')
-ul class=(checklist || style)
+ul class=(style)
   - items.each do |item|
-    - if checklist
-      - if item.attr? :checked
-        li class="checked"
-          p =item.text
-      - else
-        li class="unchecked"
-          p =item.text
+    li
+      p = item.text
       - if item.blocks?
       =item.content
-    - else
-      li
-        p = item.text
-        - if item.blocks?
-        =item.content

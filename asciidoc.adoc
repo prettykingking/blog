@@ -350,14 +350,6 @@ ____
 
 == Lists
 
-=== Checklist
-
-List items can be marked complete using checklists.
-
-* [*] checked
-* [x] also checked
-* [ ] not checked
-
 === Numbered list
 
 Here's a list of things to do after breakfast, in order:

@@ -7,8 +7,8 @@ through to medium-size institutions. Most of them are data-intensive application
 In computer science, I am interested in algorithms and data structures.
 Believe in efficient software design.
 
-[quote, Bjarne Stroustrup]
-Efficiency is not just running fast or running bigger programs,
+[quote, "Bjarne Stroustrup, June 2011"]
+Efficiency is not just running faster or running bigger programs,
 it’s also running using less resources.
 
 I occasionally write posts in link:/archive/en[English]
