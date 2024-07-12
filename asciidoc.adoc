@@ -267,7 +267,9 @@ That *_really_* has to go.
 
 Type `OK` to accept.
 
-To copy, press kbd:[Control+C] (or kbd:[Command+C] on macOS).
+To copy, press kbd:[Ctrl+C] (or
+pass:[<kbd><i class="bi bi-command"></i>Command</kbd>+<kbd>C</kbd>]
+on macOS).
 
 == Tables
 

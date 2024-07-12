@@ -15,7 +15,6 @@ I occasionally write posts in link:/archive/en[English]
 or link:/archive/zh[Chinese], mostly technical.
 
 I am https://github.com/prettykingking[prettykingking] on Github.
-You could contact me at *prettykingking@live.com*.
 
 
 == Projects
