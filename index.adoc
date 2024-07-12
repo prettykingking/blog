@@ -30,5 +30,3 @@ It's very convenient for me to look up at any time.
 Using the browser's Find +++<i class="bi bi-search"></i>+++
 can quickly jump to links. Look up link:/bookmarks[Bookmarks] only if you are
 interested.
-
-'''
