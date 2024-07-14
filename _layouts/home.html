@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en" }}">
 {%- include head.html -%}
-<body>
+<body class="sepia">
 
-<div class="main main-no-header">
-    <main>
-      <div class="main-container">
-            <article class="article">
-              <div class="article-header component-text">
-                <h1 class="article-title">Zheng Jie</h1>
-                <div class="article-desc">Super Junior Programmer</div>
-                <p>
-                  <strong>Email</strong>:
-                  <a href="mailto:prettykingking@live.com">prettykingking@live.com</a>
-                </p>
-                <div class="line"></div>
-              </div>
-
-              {{ content }}
-            </article>
+<main class="article">
+    <article>
+      <div class="article-header component-text">
+        <h1 class="article-title">Zheng Jie</h1>
+        <div class="article-desc">Super Junior Programmer</div>
+        <p>
+          <strong>Email</strong>:
+          <a href="mailto:prettykingking@live.com">prettykingking@live.com</a>
+        </p>
+        <div class="line"></div>
       </div>
-    </main>
-</div>
+
+      {{ content }}
+    </article>
+</main>
 
 {% include footer.html %}
 </body>

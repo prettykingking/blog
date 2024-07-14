@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en" }}">
 {%- include head.html -%}
-<body>
+<body class="sepia">
 
-<div class="main">
-  <main>
-    <div class="main-container">
-          <article class="article">
-            {{ content }}
-          </article>
-    </div>
+  <main class="article">
+      <article>
+        {{ content }}
+      </article>
   </main>
-</div>
 
 </body>
 </html>

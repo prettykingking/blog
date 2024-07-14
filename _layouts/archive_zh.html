@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en" }}">
 {% include head.html %}
-<body>
+<body class="sepia">
 
-<div class="header">
 {% include header_zh.html %}
-</div>
 
 {%- comment -%}
 Archive group
@@ -13,9 +11,8 @@ By year: "%Y", "%Y"
 By month: "%Y%m", "月 %Y" | prepend: month_zh
 {% endcomment %}
 
-<div class="main main-archive">
-  <main>
-    <div class="archive">
+  <main class="archive">
+    <div class="archive-list">
         <div class="row">
           <div class="col">
         {%- assign posts = site.posts -%}
@@ -75,9 +72,8 @@ By month: "%Y%m", "月 %Y" | prepend: month_zh
         </div>
         <!-- row -->
     </div>
-    <!-- archive -->
+    <!-- archive list -->
   </main>
-</div>
 
 {% include footer.html %}
 </body>
