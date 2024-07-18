@@ -3,8 +3,7 @@
 <div class="component component-image">
 .image-sheet
   .image-box
-    picture
-      img src=image_uri(attr :target) alt=(attr :alt) class=["picture-image"]
+    img src=image_uri(attr :target) alt=(attr :alt) class=role width=(attr :width) height=(attr :height)
 
 - if title?
   .image-desc =title

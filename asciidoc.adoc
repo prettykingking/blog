@@ -45,7 +45,7 @@ nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
 .*Figure 1.1* Images in Markdown
-image::/images/markdown.png[Images in Markdown]
+image::/images/markdown.png[Images in Markdown,487,200,role=border-line]
 
 ===== Level 4 Section Title
 
@@ -70,7 +70,7 @@ qui officia deserunt mollit anim id est laborum.
 
 === Code samples
 
-[%linenums,text,highlight=3]
+[source,text,highlight=3]
 ----
 server {
    listen 80;
@@ -87,7 +87,7 @@ server {
 }
 ----
 
-[%linenums,json,highlight="3..5"]
+[source,json]
 ----
 {
   "string": "a b c",
@@ -99,23 +99,25 @@ server {
 }
 ----
 
-[%linenums,c,highlight="1,3"]
-----
-#include <stdio.h>
-int main() {
-    printf("Hello Jie \nHello Jie Hello Jie Hello Jie Hello Jie Hello Jie Hello Jie");
-    return 0;
-}
-----
-
 .*Code Fragment 11.11.* Additional code
 [source,c]
 ----
 #include <stdio.h>
+
 int main() {
-    printf("Hello Jie");
+    printf("Hello Jie\n");
     return 0;
 }
+----
+
+[source,html]
+----
+<img src="image.png" alt="Alt text" width="450"/>
+<p id="unique-id">
+    Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat.
+</p>
 ----
 
 === Code in texts
