@@ -13,8 +13,14 @@ by Steven S. Skiena.
 
 == By problems
 
-https://jackschaedler.github.io/handwriting-recognition/[Handwriting recognition] -
-https://jackschaedler.github.io/circles-sines-signals/[Circles, Sines and Signals]
+* https://jackschaedler.github.io/handwriting-recognition/[Handwriting recognition]
+* https://jackschaedler.github.io/circles-sines-signals/[Circles, Sines and Signals]
+
+== Collaborative work
+
+* https://marijnhaverbeke.nl/blog/collaborative-editing-cm.html[Collaborative edition in CodeMirror]
+* https://www.figma.com/blog/how-figmas-multiplayer-technology-works/[How Figma's multiplayer works]
+* https://josephg.com/blog/crdts-are-the-future/[CRDT are the future]
 
 
 == NLP
