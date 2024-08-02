@@ -18,9 +18,12 @@ by Steven S. Skiena.
 
 == Collaborative work
 
+* https://crdt.tech[Conflict-free Replicated Data Types]
 * https://marijnhaverbeke.nl/blog/collaborative-editing-cm.html[Collaborative edition in CodeMirror]
 * https://www.figma.com/blog/how-figmas-multiplayer-technology-works/[How Figma's multiplayer works]
 * https://josephg.com/blog/crdts-are-the-future/[CRDT are the future]
+* https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/[Are CRDTs suitable for shared editing]
+* https://databases.systems/posts/collaborative-editor[Build a collaborative text editor in Go]
 
 
 == NLP
