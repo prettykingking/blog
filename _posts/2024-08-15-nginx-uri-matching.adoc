@@ -1,0 +1,77 @@
+= URI matching in Nginx
+Jie Zheng <prettykingking@live.com>
+:revdate: August 15, 2024
+:sectnums:
+:page-lang: en
+:page-layout: post_en
+:page-category: Web Server
+:page-tags: [nginx, proxy]
+:page-description: Hidden rules when configure location matching.
+
+As a proxy server, URI matching is one of the most common problems in Nginx.
+Here are some cases that can be error-prone.
+
+== Automatic 301 redirect with a trailing slash
+
+When URI points to a directory without a trailing slash, Nginx will stop
+processing and send a 301 redirect to the client.
+Also add a trailing slash on original URI.
+
+----
+location /help {
+    root /var/www/html;
+}
+----
+
+If `help` is directory under `/var/www/html` on local filesystem,
+a 301 redirect response with a trailing slash on original URI will be sent.
+
+The request `/help` will be redirected to `/help/`.
+
+
+== Regular expression not checked
+
+The `^~` modifier is used to specify prefix matching with regular expression.
+If the longest matching prefix location has the `^~` modifier
+then regular expressions are not checked.
+
+----
+location ^~ /images/ {
+    [ configuration A ]
+}
+
+location ~* \.(gif|jpg|jpeg)$ {
+    [ configuration B ]
+}
+----
+
+The request `/images/abc.jpg` will match configuration A,
+the request `/documents/abc.jpg` will match configuration B.
+
+== Matching prefix replaced
+
+When request is passed to proxied server using `proxy_pass` directive,
+in cases to change URI, `rewrite` is not the only option. Without `rewrite`, a URI specified
+in `proxy_pass` directive can have the same effect.
+
+From Nginx docs on
+https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass[`proxy_pass`]:
+
+[quote]
+____
+If the proxy_pass directive is specified with a URI,
+then when a request is passed to the server,
+the part of a normalized request URI matching the location
+is replaced by a URI specified in the directive.
+____
+
+----
+location /name/ {
+    proxy_pass http://127.0.0.1:2082/remote/;
+}
+----
+
+Using the above configuration, the request `/name/abc` will be sent to proxied server
+and URI is changed to `/remote/abc`.
+As proxy server as Nginx is, this is preferable and intuitive to `rewrite`.
+
