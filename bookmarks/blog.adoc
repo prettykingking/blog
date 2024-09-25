@@ -45,6 +45,7 @@ https://caoziang.com[曹子昂]
 
 == System and network
 
+* https://www.brendangregg.com[Brendan Gregg] - System Performance Expert
 * https://www.reddit.com/r/linux/comments/hzyu8j/im_jason_a_donenfeld_security_researcher_kernel/[Jason A. Donenfeld] - Kernel Developer
 * https://packetlife.net/about/[Jeremy Stretch] - Network engineer
 * https://blog.gslin.org[Gea-Suan Lin] - DevOps
