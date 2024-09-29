@@ -36,7 +36,6 @@ https://caoziang.com[曹子昂]
 * https://t.motd.kr[Trustin Lee] - Netty Author
 * https://martinfowler.com[Martin Fowler] - Software development
 * https://leon-wtf.github.io/[Mostly Java]
-* https://www.diguage.com/archives/[Diguage]
 
 == Golang
 
