@@ -16,6 +16,11 @@ by Steven S. Skiena.
 * https://jackschaedler.github.io/handwriting-recognition/[Handwriting recognition]
 * https://jackschaedler.github.io/circles-sines-signals/[Circles, Sines and Signals]
 
+== Index data structures
+
+* http://acube.di.unipi.it[A3 Lab]
+* https://pgm.di.unipi.it[PGM-index]
+
 == Collaborative work
 
 * https://crdt.tech[Conflict-free Replicated Data Types]

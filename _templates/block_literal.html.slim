@@ -1,6 +1,9 @@
 - if title?
   figure
     .code-listing
+      div.code-copy.hide
+        button type='button' class=['btn', 'btn-icon']
+          i class=['bi', 'bi-copy']
       .code-wrapper
         table
           tbody
@@ -10,6 +13,9 @@
     figcaption =title
 - else
   .code-listing
+    div.code-copy.hide
+      button type='button' class=['btn', 'btn-icon']
+        i class=['bi', 'bi-copy']
     .code-wrapper
       table
         tbody

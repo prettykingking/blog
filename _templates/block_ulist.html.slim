@@ -1,6 +1,8 @@
-ul class=(style)
+ul class=[style, ('checklist' if option? 'checklist')]
   - items.each do |item|
     li
+      - if option? 'checklist'
+        span class=['radio', ('checked' if item.attr? :checked) ]
       p = item.text
       - if item.blocks?
-      =item.content
+        =item.content

@@ -11,7 +11,19 @@
   <title>{{ page.title }} - Zheng Jie's Blog</title>
   {%- endif -%}
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/png" href="/images/favicon-64x64.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon-180x180.png">
-  <link rel="stylesheet" type="text/css" href="{{ "/static/css/main.3c14ea31e105be16fe89.css" | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ "/images/favicon-64x64.png" | relative_url }}">
+  <link rel="apple-touch-icon" type="image/png" href="{{ "/images/apple-touch-icon-180x180.png" | relative_url }}">
+
+  {%- if page.layout contains 'post' -%}
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  {%- endif -%}
+
+  <link rel="stylesheet" type="text/css" href="{{ "/static/css/main.fd83a3492e7c0f8d64fb.css" | relative_url }}">
+
+  {%- if page.layout contains "post" -%}
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  {%- endif -%}
+
+  <script defer src="{{ "/static/js/main.a68a2659cd3c52b7983e.js" | relative_url }}"></script>
 </head>

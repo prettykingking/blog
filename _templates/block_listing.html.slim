@@ -3,6 +3,9 @@
 - if title?
   figure
     .code-listing data-lang=source_lang
+      div.code-copy.hide
+        button type='button' class=['btn', 'btn-icon']
+          i class=['bi', 'bi-copy']
       .code-wrapper
         - if attr? :linenums
           =content
@@ -15,6 +18,9 @@
     figcaption =title
 - else
   .code-listing data-lang=source_lang
+    div.code-copy.hide
+      button type='button' class=['btn', 'btn-icon']
+        i class=['bi', 'bi-copy']
     .code-wrapper
       - if attr? :linenums
         =content

@@ -4,9 +4,9 @@
   - if tlevel == 1
     h6 class="toc-heading"
       | Table of Contents
-  ul class=[("toc-list" if tlevel == 1)]
+  ul class=[("toc" if tlevel == 1)]
     - sections.each do |sec|
-      li
+      li class=[("l2" if tlevel == 2)]
         a href="##{sec.id}" =section_title sec
         - if (sec.level < toclevels) && (child_toc = converter.convert sec, 'outline')
           = child_toc

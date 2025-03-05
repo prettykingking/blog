@@ -70,7 +70,7 @@ qui officia deserunt mollit anim id est laborum.
 
 === Code samples
 
-[source,text,highlight=3]
+[%linenums,source,text,highlight=3]
 ----
 server {
    listen 80;
@@ -387,6 +387,13 @@ int main() {
 }
 ----
 * An ant might break its leg and require a tiny splint.
+
+=== Checklist
+
+* [x] Checked
+* [x] Also checked
+* [ ] 未完成
+* normal list item
 
 === Description list
 
